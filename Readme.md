@@ -1,8 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алена Скрыпник](https://up.htmlacademy.ru/adaptive/12/user/479397).
-* Наставник: Наставник: [Михаил Поданев] (https://htmlacademy.ru/profile/mpodanev).
-
+* Наставник: Наставник: [Михаил Поданев] (https://htmlacademy.ru/profile/mpodanev)
 ---
 
 **Обратите внимание на файл:**
