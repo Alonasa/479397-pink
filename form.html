@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Конкурс Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="visually-hidden">Прими участие в конкурсе Пинк и выиграй ценные призы</h1>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Мобильное приложение Пинк">
+      </a>
+      <nav class="main-nav">
+        <h2 class="visually-hidden">Мобильное приложение Пинк</h2>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="inner-page">
+      <h2 class="visually-hidden">Конкурс от приложения Пинк</h2>
+      <section class="competition">
+        <h2 class="visually-hidden">Заполните форму участия в конкурсе</h2>
+        <p class="competition__title">Поделитесь своей историей и получите шанс выйграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="competition__personal-data">
+            <legend class="competition__member-placeholders visually-hidden">Введите данные о себе</legend>
+            <p class="competition__input-info">
+              <label for="competition__last-name">Фамилия:</label>
+              <input type="text" name="last-name" id="competition__last-name" placeholder="Укажите фамилию *">
+            </p>
+            <p class="competition__input-info">
+              <label for="competition__first-name">Имя:</label>
+              <input type="text" name="first-name" id="competition__first-name" placeholder="Введите ваше имя *">
+            </p>
+            <p class="competition__input-info">
+              <label for="competition__middle-name">Отчество:</label>
+              <input type="text" name="middle-name" id="competition__middle-name" placeholder="Ну и отчество тоже">
+            </p>
+          </fieldset>
+          <fieldset class="competition__goals">
+            <legend class="competition__personal-goals">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="competition__list-checkbox">
+              <li class="competition__list-option">
+                <input class="visually-hidden" type="checkbox" name="selfie-with-fish" id="selfie-with-fish" checked>
+                <label for="selfie-with-fish">Сделал селфи с акулой</label>
+              </li>
+              <li class="competition__list-option">
+                <input class="visually-hidden" type="checkbox" name="burn-on-beach" id="burn-on-beach" checked>
+                <label for="burn-on-beach">Обгорел на пляже</label>
+              </li>
+              <li class="competition__list-option">
+                <input class="visually-hidden" type="checkbox" name="saw-chuck-norris" id="saw-chuck-norris">
+                <label for="saw-chuck-norris">Видел Чака Норриса</label>
+              </li>
+              <li class="competition__list-option">
+                <input class="visually-hidden" type="checkbox" name="bought-souvenirs" id="bought-souvenirs">
+                <label for="bought-souvenirs">Накупил сувениров</label>
+              </li>
+              <li class="competition__list-option">
+                <input class="visually-hidden" type="checkbox" name="hold-tower" id="hold-tower" checked>
+                <label for="hold-tower">Удержал башню</label>
+              </li>
+              <li class="competition__list-option">
+                <input class="visually-hidden" type="checkbox" name="crush-hotel" id="crush-hotel">
+                <label for="crush-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="competition__personal-contacts">
+            <legend class="visually-hidden">Ваши контакты:</legend>
+            <p class="competition__input-field">
+              <label for="competition__phone">Номер телефона</label>
+              <input type="tel" name="competition__phone" id="competition__phone" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="competition__input-field">
+              <label for="competition__email">Адрес почты</label>
+              <input type="email" name="competition__email" id="competition__email" placeholder="Введите почту *">
+            </p>
+          </fieldset>
+          <fieldset class="competition__app">
+            <legend class="competition__legend">С каким приложением путешествовали?</legend>
+            <ul class="competition__app-list">
+              <li class="competition__app-item">
+                <input class="visually-hidden" type="radio" name="competition__ios" id="competition__ios" checked>
+                <label for="competition__ios">Pink для iOS</label>
+              </li>
+              <li class="competition__app-item">
+                <input class="visually-hidden" type="radio" name="competition__android" id="competition__android">
+                <label for="competition__android">Pink для Android</label>
+              </li>
+              <li class="competition__app-item">
+                <input class="visually-hidden" type="radio" name="competition__windows" id="competition__windows">
+                <label for="competition__windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="competition__emotions-input">
+            <legend class="competition__legend">Опишите свои эмоции</legend>
+            <textarea cols="40" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="button competition__button" type="submit">Отправить форму</button>
+        </form>
+        <p class="competition__requiered"><span class="competition__star-marker">*</span> — Обязательные поля</p>
+        <div class="modal modal-error">
+          <div class="modal-error__wrapper">
+            <h3 class="modal-error__title">Что-то пошло не так!</h3>
+            <p class="modal-error__info">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="button modal-error__button" type="button">Ок</button>
+          </div>
+        </div>
+        <div class="modal modal-success">
+          <div class="modal-success__wrapper">
+            <h3 class="modal-success__title">Ваша заявка отправлена</h3>
+            <p class="modal-success__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+            <button class="button modal-success__button" type="button">Ок</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="inner-footer">
+      <div class="inner-footer__wrapper">
+        <a class="inner-footer__logo">
+          <img class="inner-footer__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Пинк лого футер">
+        </a>
+        <div class="inner-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+                <!-- <svg class="social__logo">
+                </svg> -->
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Фейсбук</span>
+                <!-- <svg class="social__logo">
+                </svg> -->
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">
+                <span class="visually-hidden">Ютуб</span>
+                <!-- <svg class="social__logo">
+                </svg> -->
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="inner-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
