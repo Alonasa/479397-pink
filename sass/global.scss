@@ -1,9 +1,15 @@
 body {
+  min-width: 320px;
   padding: 0;
   margin: 0;
   font-family: "Open Sans", "Tahoma", sans-serif;
-  margin: 0 auto;
-  padding: 0;
+  color: $main-blue;
+  line-height: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -16,16 +22,3 @@ body {
   padding: 0;
   border: 0;
 }
-
-$white: #ffffff;
-$main-blue: #283645;
-$titles-big: #000000;
-$pink: #d22856;
-$fw-bold: 700;
-$fw-med: 400;
-$fw-small: 300;
-$fs-xsmall: 14px;
-$fs-small:18px;
-$fs-med:24px;
-$big: uppercase;
-$list: none;

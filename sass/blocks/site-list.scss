@@ -1,1 +1,22 @@
+.site-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  font-size: $s-small;
+  font-weight: $fw-bold;
+  text-transform: $big;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+&__item {
+  padding: 15px 0;
+  list-style: $list;
+  line-height: $s-big;
+}
+
+&__link {
+  text-decoration: none;
+  color: $white;
+}
+}
