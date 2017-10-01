@@ -98,34 +98,36 @@
         </div>
       </section>
       <section class="reviews">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews__list slider">
-          <input class="reviews__button slider__button-1" type="radio" id="slider-btn1" checked>
-          <input class="reviews__button slider__button-2" type="radio" id="slider-btn2">
-          <input class="reviews__button slider__button-3" type="radio" id="slider-btn3">
-          <div class="reviews__slider-control">
-            <label class="reviews__controller slider__controller-1" for="slider-btn1"></label>
-            <label class="reviews__controller slider__controller-2" for="slider-btn2"></label>
-            <label class="reviews__controller slider__controller-3" for="slider-btn3"></label>
+        <div class="reviews__container">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <div class="reviews__list slider">
+            <input class="reviews__button slider__button-1" type="radio" id="slider-btn1" checked>
+            <input class="reviews__button slider__button-2" type="radio" id="slider-btn2">
+            <input class="reviews__button slider__button-3" type="radio" id="slider-btn3">
+            <div class="reviews__slider-control">
+              <label class="reviews__controller slider__controller-1" for="slider-btn1"></label>
+              <label class="reviews__controller slider__controller-2" for="slider-btn2"></label>
+              <label class="reviews__controller slider__controller-3" for="slider-btn3"></label>
+            </div>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
           </div>
-          <blockquote class="reviews__item slider__item">
-            <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__text">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__text">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__text">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </blockquote>
         </div>
       </section>
       <section class="prices">
@@ -165,6 +167,16 @@
             </div>
           </li>
         </ul>
+        <div class="prices__controls">
+          <input class="visually-hidden prices__input prices__input-min" type="radio" name="prices-toggler" id="prices__min">
+          <input class="visually-hidden prices__input prices__input-standart" type="radio" name="prices-toggler" id="prices__standart" checked>
+          <input class="visually-hidden prices__input prices__input-max" type="radio" name="prices-toggler" id="prices__max">
+          <div class="prices__slider-control">
+            <label class="prices__toggler prices__toggler-min" for="prices__min"></label>
+            <label class="prices__toggler prices__toggler-standart" for="prices__standart"></label>
+            <label class="prices__toggler prices__toggler-max" for="prices__max"></label>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="contacts">
