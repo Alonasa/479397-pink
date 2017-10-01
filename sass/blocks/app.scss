@@ -1,5 +1,6 @@
 .app {
   color: $white;
+  background-color: #1d2631;
 
 &__photo {
   height: 396px;
@@ -10,10 +11,6 @@
 
 &__prewiev {
   padding-top: 111px;
-}
-
-&__wrapper {
-  background-color: #1d2631;
 }
 
 &__container {
@@ -29,7 +26,7 @@
 }
 
 &__links {
-  width: 207px;
+  min-width: 207px;
   padding: 0;
   margin: 0;
   list-style: $list;
@@ -45,10 +42,12 @@
   padding-right: 32px;
 }
 &__accessibility {
+  padding: 0;
+  margin: 0;
   line-height: $s-med;
   font-size: $s-xsmall;
   font-weight: $fw-small;
-  padding-top: 5px;
+  padding-top: 18px;
   text-align: center;
 }
 }

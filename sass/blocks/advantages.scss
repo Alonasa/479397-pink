@@ -1,0 +1,56 @@
+.advantages {
+  color: $main-blue;
+  background-color: $main-pink;
+
+&__container {
+  width: 280px;
+  min-height: 242px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+&__head {
+  font-weight: $fw-small;
+  font-size: $s-med;
+  font-weight: $fw-small;
+  text-align: center;
+  padding-top: 20px;
+}
+
+&__question {
+  font-weight: $fw-small;
+  font-size: $s-med;
+  font-weight: $fw-small;
+  line-height: 30px;
+}
+
+&__offer {
+  padding-top: 5px;
+  line-height: 28px;
+}
+&__list {
+  padding: 0;
+  margin: 0;
+  list-style: $list;
+  padding-top: 88px;
+  text-align: center;
+}
+
+&__item {
+  margin-bottom: 30px;
+}
+
+&__title {
+  padding: 0;
+  margin: 0;
+  font-size: $s-small;
+}
+
+&__description {
+  margin: 0 auto;
+  padding-top: 13px;
+  text-align: center;
+  font-size: $s-xsmall;
+  font-weight: $fw-med;
+}
+}
