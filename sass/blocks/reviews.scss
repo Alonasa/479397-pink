@@ -1,1 +1,22 @@
+.reviews {
+  line-height: 30px;
 
+&__item {
+  padding: 0;
+  margin: 0;
+}
+
+&__author-name {
+  font-size: $s-small;
+  font-weight: $fw-bold;
+  font-style: normal;
+  color: $black;
+}
+
+&__text {
+  font-size: $s-xsmall;
+  font-weight: $fw-med;
+  color: $main-blue;
+}
+
+}
