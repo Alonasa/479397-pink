@@ -1,5 +1,6 @@
 .advantages {
   color: $main-blue;
+  font-weight: $fw-small;
 
   &__container {
     width: 280px;
@@ -11,7 +12,6 @@
   &__head {
     font-weight: $fw-small;
     font-size: $s-med;
-    font-weight: $fw-small;
     text-align: center;
     padding-top: 20px;
   }
@@ -19,7 +19,6 @@
   &__question {
     font-weight: $fw-small;
     font-size: $s-med;
-    font-weight: $fw-small;
     line-height: 30px;
   }
 
@@ -56,5 +55,4 @@
     font-size: $s-xsmall;
     font-weight: $fw-med;
   }
-
 }

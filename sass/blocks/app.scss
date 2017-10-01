@@ -2,54 +2,52 @@
   color: $white;
   background-color: #1d2631;
 
-&__photo {
-  height: 396px;
-  background-image: url("../img/bg-back-mobile@1x.jpg") ;
-  background-repeat: no-repeat;
-  background-position: 50%  100%;
-}
+  &__photo {
+    height: 396px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%  100%;
+  }
 
-&__prewiev {
-  padding-top: 111px;
-}
+  &__prewiev {
+    padding-top: 111px;
+  }
 
-&__container {
-  width: 280px;
-  min-height: 242px;
-  padding: 0 20px;
-  margin: 0 auto;
-  padding-top: 30px;
-}
+  &__container {
+    width: 280px;
+    min-height: 242px;
+    padding: 0 20px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
 
-&__link-main {
-  margin-bottom: 31px;
-}
+  &__link-main {
+    margin-bottom: 31px;
+  }
 
-&__links {
-  min-width: 207px;
-  padding: 0;
-  margin: 0;
-  list-style: $list;
-  margin: auto;
-}
+  &__links {
+    min-width: 207px;
+    padding: 0;
+    margin: 0;
+    list-style: $list;
+  }
 
-&__list {
-  display: inline;
-}
+  &__list {
+    display: inline;
+  }
 
-&__link {
-  text-decoration: $list;
-  padding-right: 32px;
-}
+  &__link {
+    text-decoration: $list;
+    padding-right: 32px;
+  }
 
-&__accessibility {
-  padding: 0;
-  margin: 0;
-  line-height: $s-med;
-  font-size: $s-xsmall;
-  font-weight: $fw-small;
-  padding-top: 18px;
-  text-align: center;
-}
-
+  &__accessibility {
+    padding: 0;
+    margin: 0;
+    line-height: $s-med;
+    font-size: $s-xsmall;
+    font-weight: $fw-small;
+    padding-top: 18px;
+    text-align: center;
+  }
 }

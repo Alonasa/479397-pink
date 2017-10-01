@@ -8,14 +8,14 @@
   flex-direction: column;
   align-items: center;
 
-&__item {
-  padding: 15px 0;
-  list-style: $list;
-  line-height: $s-big;
-}
+  &__item {
+    padding: 15px 0;
+    list-style: $list;
+    line-height: $s-big;
+  }
 
-&__link {
-  text-decoration: none;
-  color: $white;
-}
+  &__link {
+    text-decoration: none;
+    color: $white;
+  }
 }
