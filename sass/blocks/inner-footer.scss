@@ -2,11 +2,11 @@
   margin: 40px 0;
   padding: $indent;
 
-&__logo-image:hover {
-  path {
-    fill: $pink;
+  &__logo-image:hover {
+    path {
+      fill: $pink;
+    }
   }
-}
 
   &__logo-image:active {
     opacity: 0.3;

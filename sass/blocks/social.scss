@@ -1,8 +1,7 @@
 .social {
-
   &__list {
-    list-style: $list;
     @include zero;
+    list-style: $list;
   }
 
   &__item {
@@ -23,7 +22,7 @@
     opacity: 0.1;
   }
 
-  &__link{
+  &__link {
     text-decoration: none;
   }
 

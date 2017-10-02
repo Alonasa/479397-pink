@@ -1,103 +1,104 @@
 .photos {
   @include zero;
 
-    &__head {
-      @include zero;
-      min-height: 172px;
-      background-image: url("../img/bg-back-mobile@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+  &__head {
+    @include zero;
+    min-height: 172px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    &__promo {
-      @include zero;
-      color: $white;
-      @include font-large;
-      padding: 30px;
-      text-align: center;
-    }
+  &__promo {
+    @include zero;
+    color: $white;
 
-    &__description {
-      @include font-small;
-      background-color: $white;
-      padding: 31px 38px 35px;
-      text-align: center;
-    }
+    @include font-large;
+    padding: 30px;
+    text-align: center;
+  }
 
-    &__panoramic {
-      position: absolute;
-    }
+  &__description {
+    @include font-small;
+    background-color: $white;
+    padding: 31px 38px 35px;
+    text-align: center;
+  }
 
-    &__top-rated {
-      @include zero;
-      font-size: 12px;
-      padding: 6px 21px;
-      font-weight: $big;
-      line-height: $s-med;
-      text-transform: $big;
-      color: $white;
-      background-color: $pink;
-      position: relative;
-      top: 0;
-      left: 160px;
-    }
+  &__panoramic {
+    position: absolute;
+  }
 
-    &__container {
-      padding: $indent;
-    }
+  &__top-rated {
+    @include zero;
+    font-size: 12px;
+    padding: 6px 21px;
+    font-weight: $big;
+    line-height: $s-med;
+    text-transform: $big;
+    color: $white;
+    background-color: $pink;
+    position: relative;
+    top: 0;
+    left: 160px;
+  }
 
-    &__body {
-      @include zero;
-      list-style: $list;
-    }
+  &__container {
+    padding: $indent;
+  }
 
-    &__list {
-      background-color: $main-pink;
-      margin-bottom: 20px;
-    }
+  &__body {
+    @include zero;
+    list-style: $list;
+  }
 
-    &__item {
-      @include zero;
-      @include font-xsmall;
-      padding: $indent;
-      padding-top: 12px;
-    }
+  &__list {
+    background-color: $main-pink;
+    margin-bottom: 20px;
+  }
 
-    &__top-value {
-      @include zero;
-      margin: $indent;
-      padding: $indent;
-      padding-top: 20px;
-      background-color: $main-pink;
-      margin-top: 100px;
-      margin-bottom: 20px;
-    }
+  &__item {
+    @include zero;
+    @include font-xsmall;
+    padding: $indent;
+    padding-top: 12px;
+  }
 
-    &__author-name {
-      font-weight: $fw-bold;
-      font-style: normal;
-    }
+  &__top-value {
+    @include zero;
+    margin: $indent;
+    padding: $indent;
+    padding-top: 20px;
+    background-color: $main-pink;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
 
-    &__comment {
-      @include zero;
-    }
+  &__author-name {
+    font-weight: $fw-bold;
+    font-style: normal;
+  }
 
-    &__rating {
-      @include zero;
-      text-transform: $big;
-      font-size: 12px;
-      line-height: 12px;
-      color: $pink;
-      font-weight: $fw-small;
-      padding: 14px 0 27px;
-    }
+  &__comment {
+    @include zero;
+  }
 
-    &__like {
-      padding-left: 15px;
-    }
+  &__rating {
+    @include zero;
+    text-transform: $big;
+    font-size: 12px;
+    line-height: 12px;
+    color: $pink;
+    font-weight: $fw-small;
+    padding: 14px 0 27px;
+  }
 
-    &__likes-action {
-      text-decoration: $list;
-      color: $pink;
-    }
+  &__like {
+    padding-left: 15px;
+  }
+
+  &__likes-action {
+    text-decoration: $list;
+    color: $pink;
+  }
 }
