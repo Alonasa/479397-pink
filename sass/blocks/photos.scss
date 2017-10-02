@@ -1,15 +1,103 @@
 .photos {
-  padding: 0;
-  margin: 0;
+  @include zero;
 
-  &__title {
-    padding: 0;
-    margin: 0;
-    min-height: 170px;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 80%;
-    color: $white;
-  }
+    &__head {
+      @include zero;
+      min-height: 172px;
+      background-image: url("../img/bg-back-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__promo {
+      @include zero;
+      color: $white;
+      @include font-large;
+      padding: 30px;
+      text-align: center;
+    }
+
+    &__description {
+      @include font-small;
+      background-color: $white;
+      padding: 31px 38px 35px;
+      text-align: center;
+    }
+
+    &__panoramic {
+      position: absolute;
+    }
+
+    &__top-rated {
+      @include zero;
+      font-size: 12px;
+      padding: 6px 21px;
+    	font-weight: $big;
+    	line-height: $s-med;
+    	text-transform: $big;
+      color: $white;
+      background-color: $pink;
+      position: relative;
+      top: 0;
+      left: 160px;
+    }
+
+    &__container {
+      padding: $indent;
+    }
+
+    &__body {
+      @include zero;
+      list-style: $list;
+    }
+
+    &__list {
+      background-color: $main-pink;
+      margin-bottom: 20px;
+    }
+
+    &__item {
+      @include zero;
+      @include font-xsmall;
+      padding: $indent;
+      padding-top: 12px;
+    }
+
+    &__top-value {
+      @include zero;
+      margin: $indent;
+      padding: $indent;
+      padding-top: 20px;
+      background-color: $main-pink;
+      margin-top: 100px;
+      margin-bottom: 20px;
+    }
+
+    &__author-name {
+      font-weight: $fw-bold;
+      font-style: normal;
+    }
+
+    &__comment {
+      @include zero;
+    }
+
+    &__rating {
+      @include zero;
+      text-transform: $big;
+      font-size: 12px;
+      line-height: 12px;
+      color: $pink;
+      font-weight: $fw-small;
+      padding: 14px 0 27px;
+    }
+
+    &__like {
+      padding-left: 15px;
+    }
+
+    &__likes-action {
+      text-decoration: $list;
+      color: $pink;
+    }
 }
