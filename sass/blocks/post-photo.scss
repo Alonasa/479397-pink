@@ -1,0 +1,55 @@
+.post-photo {
+  background-color: $main-pink;
+
+  &__header {
+    background-color: $white;
+    @include font-small;
+  }
+
+  &__title {
+    @include zero;
+
+  }
+
+  &__container {
+    padding: $indent;
+  }
+
+  &__title {
+    padding: 20px 20px 48px;
+  }
+
+  &__button {
+    border: 3px solid $pink;
+    color: $pink;
+    background-color: $main-pink;
+    @include button;
+    width: 280px;
+    padding: 15px 40px;
+    border-radius: 26px;
+    margin-bottom: 14px;
+  }
+  &__button:hover {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &__button:active {
+    background-color: $pink;
+    color: rgba(255,255,255,0.3);
+  }
+
+  &__button--disabled {
+    border: 3px solid #283645;
+    color: #283645;
+    opacity: 0.1;
+  }
+
+  &__button--disabled:hover {
+    background-color: #283645;
+  }
+
+  &__button--disabled:active {
+    background-color: #283645;
+  }
+}

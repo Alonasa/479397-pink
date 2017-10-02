@@ -19,3 +19,14 @@
 	font-weight: 300;
   line-height: 30px;
 }
+
+@mixin button {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  word-break: break-all;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
