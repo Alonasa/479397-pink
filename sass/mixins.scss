@@ -20,6 +20,12 @@
   line-height: 18px;
 }
 
+@mixin font-medium {
+  	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
 @mixin font-large {
   font-size: 24px;
   font-weight: 300;
@@ -35,4 +41,12 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
+}
+
+@mixin button-zero {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  word-break: break-all;
 }
