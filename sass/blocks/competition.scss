@@ -10,7 +10,6 @@
 
   &__promo {
     @include zero;
-
     @include font-large;
     color: $white;
     padding: 30px 20px;
@@ -19,7 +18,6 @@
 
   &__title {
     @include zero;
-
     @include font-small;
     padding: 46px 25px 34px;
     text-align: center;
@@ -64,7 +62,6 @@
 
   &__goals {
     @include zero;
-
     @include font-medium;
     background-color: $main-pink;
     border: $list;
@@ -91,7 +88,6 @@
 
   &__app {
     @include zero;
-
     @include font-medium;
     border: $list;
     background-color: $main-pink;
