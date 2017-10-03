@@ -72,7 +72,9 @@
 .competition__goals legend,
 .competition__app legend,
 .competition__emotions-input legend {
+  @include zero;
   @include font-middle;
+  padding-top: 96px;
   text-transform: $big;
   color: $pink;
   text-align: center;
