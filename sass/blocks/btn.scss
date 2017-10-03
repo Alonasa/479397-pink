@@ -7,11 +7,11 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
+}
 
-  &__download-app {
-    color: $white;
-    border: 3px solid #ffffff;
-    border-radius: 25px;
-    padding: 14px 37px;
-  }
+.btn__download-app {
+  color: $white;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+  padding: 14px 37px;
 }

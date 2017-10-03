@@ -1,104 +1,104 @@
 .photos {
   @include zero;
+}
 
-  &__head {
-    @include zero;
-    min-height: 172px;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 23%;
-  }
+.photos__head {
+  @include zero;
+  min-height: 172px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 23%;
+}
 
-  &__promo {
-    @include zero;
-    color: $white;
+.photos__promo {
+  @include zero;
+  color: $white;
 
-    @include font-large;
-    padding: 30px;
-    text-align: center;
-  }
+  @include font-large;
+  padding: 30px;
+  text-align: center;
+}
 
-  &__description {
-    @include font-small;
-    background-color: $white;
-    padding: 31px 38px 35px;
-    text-align: center;
-  }
+.photos__description {
+  @include font-small;
+  background-color: $white;
+  padding: 31px 38px 35px;
+  text-align: center;
+}
 
-  &__panoramic {
-    position: absolute;
-  }
+.photos__panoramic {
+  position: absolute;
+}
 
-  &__top-rated {
-    @include zero;
-    font-size: 12px;
-    padding: 6px 21px;
-    font-weight: $big;
-    line-height: $s-med;
-    text-transform: $big;
-    color: $white;
-    background-color: $pink;
-    position: relative;
-    top: 0;
-    left: 160px;
-  }
+.photos__top-rated {
+  @include zero;
+  font-size: 12px;
+  padding: 6px 21px;
+  font-weight: $big;
+  line-height: $s-med;
+  text-transform: $big;
+  color: $white;
+  background-color: $pink;
+  position: relative;
+  top: 0;
+  left: 160px;
+}
 
-  &__container {
-    padding: $indent;
-  }
+.photos__container {
+  padding: $indent;
+}
 
-  &__body {
-    @include zero;
-    list-style: $list;
-  }
+.photos__body {
+  @include zero;
+  list-style: $list;
+}
 
-  &__list {
-    background-color: $main-pink;
-    margin-bottom: 20px;
-  }
+.photos__list {
+  background-color: $main-pink;
+  margin-bottom: 20px;
+}
 
-  &__item {
-    @include zero;
-    @include font-xsmall;
-    padding: $indent;
-    padding-top: 12px;
-  }
+.photos__item {
+  @include zero;
+  @include font-xsmall;
+  padding: $indent;
+  padding-top: 12px;
+}
 
-  &__top-value {
-    @include zero;
-    margin: $indent;
-    padding: $indent;
-    padding-top: 20px;
-    background-color: $main-pink;
-    margin-top: 100px;
-    margin-bottom: 20px;
-  }
+.photos__top-value {
+  @include zero;
+  margin: $indent;
+  padding: $indent;
+  padding-top: 20px;
+  background-color: $main-pink;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
 
-  &__author-name {
-    font-weight: $fw-bold;
-    font-style: normal;
-  }
+.photos__author-name {
+  font-weight: $fw-bold;
+  font-style: normal;
+}
 
-  &__comment {
-    @include zero;
-  }
+.photos__comment {
+  @include zero;
+}
 
-  &__rating {
-    @include zero;
-    text-transform: $big;
-    font-size: 12px;
-    line-height: 12px;
-    color: $pink;
-    font-weight: $fw-small;
-    padding: 14px 0 27px;
-  }
+.photos__rating {
+  @include zero;
+  text-transform: $big;
+  font-size: 12px;
+  line-height: 12px;
+  color: $pink;
+  font-weight: $fw-small;
+  padding: 14px 0 27px;
+}
 
-  &__like {
-    padding-left: 15px;
-  }
+.photos__like {
+  padding-left: 15px;
+}
 
-  &__likes-action {
-    text-decoration: $list;
-    color: $pink;
-  }
+.photos__likes-action {
+  text-decoration: $list;
+  color: $pink;
 }

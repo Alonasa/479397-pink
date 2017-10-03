@@ -1,36 +1,36 @@
 .prices {
   text-transform: $big;
   line-height: 30px;
+}
 
-  &__list {
-    padding: 0;
-    margin: 0;
-    list-style: $list;
-  }
+.prices__list {
+  padding: 0;
+  margin: 0;
+  list-style: $list;
+}
 
-  &__header {
-    min-height: 98px;
-    background-color: $main-blue;
-    color: $white;
-    text-align: center;
-  }
+.prices__header {
+  min-height: 98px;
+  background-color: $main-blue;
+  color: $white;
+  text-align: center;
+}
 
-  &__title {
-    padding: 0;
-    margin: 0;
-    font-size: $s-small;
-    font-weight: $fw-bold;
-    padding-top: 16px;
-  }
+.prices__title {
+  padding: 0;
+  margin: 0;
+  font-size: $s-small;
+  font-weight: $fw-bold;
+  padding-top: 16px;
+}
 
-  &__rate {
-    font-size: $s-med;
-    font-weight: $fw-small;
-  }
+.prices__rate {
+  font-size: $s-med;
+  font-weight: $fw-small;
+}
 
-  &__body {
-    font-size: $s-xsmall;
-    font-weight: $fw-med;
-    padding-left: 60px;
-  }
+.prices__body {
+  font-size: $s-xsmall;
+  font-weight: $fw-med;
+  padding-left: 60px;
 }

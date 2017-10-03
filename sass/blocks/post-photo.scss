@@ -1,52 +1,52 @@
 .post-photo {
   background-color: $main-pink;
+}
 
-  &__header {
-    @include font-small;
-    background-color: $white;
-  }
+.post-photo__header {
+  @include font-small;
+  background-color: $white;
+}
 
-  &__container {
-    padding: $indent;
-  }
+.post-photo__container {
+  padding: $indent;
+}
 
-  &__title {
-    @include zero;
-    padding: 20px 20px 48px;
-  }
+.post-photo__title {
+  @include zero;
+  padding: 20px 20px 48px;
+}
 
-  &__button {
-    @include button;
-    border: 3px solid $pink;
-    color: $pink;
-    background-color: $main-pink;
-    width: 280px;
-    padding: 15px 40px;
-    border-radius: 26px;
-    margin-bottom: 14px;
-  }
+.post-photo__button {
+  @include button;
+  border: 3px solid $pink;
+  color: $pink;
+  background-color: $main-pink;
+  width: 280px;
+  padding: 15px 40px;
+  border-radius: 26px;
+  margin-bottom: 14px;
+}
 
-  &__button:hover {
-    background-color: $pink;
-    color: $white;
-  }
+.post-photo__button:hover {
+  background-color: $pink;
+  color: $white;
+}
 
-  &__button:active {
-    background-color: $pink;
-    color: rgba(255, 255, 255, 0.3);
-  }
+.post-photo__button:active {
+  background-color: $pink;
+  color: rgba(255, 255, 255, 0.3);
+}
 
-  &__button--disabled {
-    border: 3px solid #283645;
-    color: #283645;
-    opacity: 0.1;
-  }
+.post-photo__button--disabled {
+  border: 3px solid #283645;
+  color: #283645;
+  opacity: 0.1;
+}
 
-  &__button--disabled:hover {
-    background-color: #283645;
-  }
+.post-photo__button--disabled:hover {
+  background-color: #283645;
+}
 
-  &__button--disabled:active {
-    background-color: #283645;
-  }
+.post-photo__button--disabled:active {
+  background-color: #283645;
 }

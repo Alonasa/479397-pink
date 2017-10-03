@@ -1,32 +1,30 @@
-.social {
-  &__list {
-    @include zero;
-    list-style: $list;
-  }
+.social__list {
+  @include zero;
+  list-style: $list;
+}
 
-  &__item {
-    text-align: center;
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 3px solid #e9ebec;
-    display: inline-block;
-  }
+.social__item {
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #e9ebec;
+  display: inline-block;
+}
 
-  &__item:hover {
-    border: 3px solid #000000;
-  }
+.social__item:hover {
+  border: 3px solid #000000;
+}
 
-  &__item:active {
-    opacity: 0.1;
-  }
+.social__item:active {
+  opacity: 0.1;
+}
 
-  &__link {
-    text-decoration: none;
-  }
+.social__link {
+  text-decoration: none;
+}
 
-  &__logo {
-    margin-top: 15px;
-  }
+.social__logo {
+  margin-top: 15px;
 }

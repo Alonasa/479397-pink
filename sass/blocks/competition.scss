@@ -1,129 +1,129 @@
 .competition {
   @include zero;
+}
 
-  &__head {
-    min-height: 172px;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 23%;
-  }
+.competition__head {
+  min-height: 172px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 23%;
+}
 
-  &__promo {
-    @include zero;
-    @include font-large;
-    color: $white;
-    padding: 30px 20px;
-    text-align: center;
-  }
+.competition__promo {
+  @include zero;
+  @include font-large;
+  color: $white;
+  padding: 30px 20px;
+  text-align: center;
+}
 
-  &__title {
-    @include zero;
-    @include font-small;
-    padding: 46px 25px 34px;
-    text-align: center;
-  }
+.competition__title {
+  @include zero;
+  @include font-small;
+  padding: 46px 25px 34px;
+  text-align: center;
+}
 
-  &__personal-data {
-    @include zero;
-    border: $list;
-    padding: $indent;
-    padding-bottom: 6px;
-  }
+.competition__personal-data {
+  @include zero;
+  border: $list;
+  padding: $indent;
+  padding-bottom: 6px;
+}
 
-  &__input-info {
-    @include zero;
-    margin-bottom: 3px;
-  }
+.competition__input-info {
+  @include zero;
+  margin-bottom: 3px;
+}
 
-  &__input-info input[type="text"],
-  &__input-field input[type="tel"],
-  &__input-field input[type="email"] {
-    margin: 4px 0 15px;
-    width: 234px;
-    padding: 20px 21px;
-    border: 2px solid #e5e5e5;
-    color: $main-blue;
-  }
+.competition__input-info input[type="text"],
+.competition__input-field input[type="tel"],
+.competition__input-field input[type="email"] {
+  margin: 4px 0 15px;
+  width: 234px;
+  padding: 20px 21px;
+  border: 2px solid #e5e5e5;
+  color: $main-blue;
+}
 
-  &__input-info input[type="text"]::placeholder,
-  &__input-field input[type="tel"]::placeholder,
-  &__input-field input[type="email"]::placeholder,
-  &__emotions-input textarea::placeholder {
-    @include font-medium;
-    color: $main-blue;
-  }
+.competition__input-info input[type="text"]::placeholder,
+.competition__input-field input[type="tel"]::placeholder,
+.competition__input-field input[type="email"]::placeholder,
+.competition__emotions-input textarea::placeholder {
+  @include font-medium;
+  color: $main-blue;
+}
 
-  &__label {
-    @include font-small;
-    color: $pink;
-    text-transform: $big;
-    padding: $indent;
-  }
+.competition__label {
+  @include font-small;
+  color: $pink;
+  text-transform: $big;
+  padding: $indent;
+}
 
-  &__goals {
-    @include zero;
-    @include font-medium;
-    background-color: $main-pink;
-    border: $list;
-    padding: $indent;
-  }
+.competition__goals {
+  @include zero;
+  @include font-medium;
+  background-color: $main-pink;
+  border: $list;
+  padding: $indent;
+}
 
-  &__goals legend,
-  &__app legend,
-  &__emotions-input legend {
-    @include font-middle;
-    text-transform: $big;
-    color: $pink;
-    text-align: center;
-  }
+.competition__goals legend,
+.competition__app legend,
+.competition__emotions-input legend {
+  @include font-middle;
+  text-transform: $big;
+  color: $pink;
+  text-align: center;
+}
 
-  &__list-checkbox {
-    list-style: $list;
-  }
+.competition__list-checkbox {
+  list-style: $list;
+}
 
-  &__personal-contacts {
-    border: $list;
-    padding: $indent;
-  }
+.competition__personal-contacts {
+  border: $list;
+  padding: $indent;
+}
 
-  &__app {
-    @include zero;
-    @include font-medium;
-    border: $list;
-    background-color: $main-pink;
-    padding: $indent;
-  }
+.competition__app {
+  @include zero;
+  @include font-medium;
+  border: $list;
+  background-color: $main-pink;
+  padding: $indent;
+}
 
-  &__app-item {
-    list-style: $list;
-  }
+.competition__app-item {
+  list-style: $list;
+}
 
-  &__emotions-input {
-    border: $list;
-    padding: $indent;
-  }
+.competition__emotions-input {
+  border: $list;
+  padding: $indent;
+}
 
-  &__textarea {
-    margin: 15px 0;
-    width: 248px;
-    height: 169px;
-    padding: 14px;
-    border: 2px solid #e5e5e5;
-    color: $main-blue;
-  }
+.competition__textarea {
+  margin: 15px 0;
+  width: 248px;
+  height: 169px;
+  padding: 14px;
+  border: 2px solid #e5e5e5;
+  color: $main-blue;
+}
 
-  &__requiered {
-    @include font-small;
-    padding: $indent;
-    text-transform: $big;
-    text-align: center;
-  }
+.competition__requiered {
+  @include font-small;
+  padding: $indent;
+  text-transform: $big;
+  text-align: center;
+}
 
-  &__star-marker {
-    color: $pink;
-  }
+.competition__star-marker {
+  color: $pink;
+}
 
-  &__button {
-    padding: 0 20px;
-  }
+.competition__button {
+  padding: 0 20px;
 }
