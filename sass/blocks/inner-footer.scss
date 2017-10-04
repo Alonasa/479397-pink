@@ -1,0 +1,16 @@
+.inner-footer {
+  margin: 40px 0;
+  padding: $indent;
+}
+
+.inner-footer__logo-image {
+  &:hover {
+    path {
+      fill: $pink;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

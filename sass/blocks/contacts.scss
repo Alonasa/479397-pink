@@ -1,0 +1,54 @@
+.contacts {
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: $s-med;
+  font-weight: $fw-small;
+}
+
+.contacts__container {
+  text-align: center;
+}
+
+.contacts__wrapper {
+  background-color: $white;
+  padding: 0 20px;
+}
+
+.contacts__list {
+  padding: 0;
+  margin: 0;
+  list-style: $list;
+}
+
+.contacts__item {
+  padding-bottom: 24px;
+}
+
+.contacts__action-ask {
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 32px;
+  font-size: $s-med;
+  font-weight: $fw-small;
+  line-height: 30px;
+}
+
+.contacts__action {
+  padding: 0;
+  margin: 0;
+  color: $black;
+  font-size: $s-small;
+  font-weight: $fw-bold;
+}
+
+.contacts__method {
+  text-decoration: $list;
+  color: $pink;
+  font-size: $s-med;
+  font-weight: $fw-small;
+  line-height: 30px;
+}

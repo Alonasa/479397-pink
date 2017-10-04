@@ -1,0 +1,12 @@
+.button {
+  @include button-zero;
+  border: $list;
+  color: $white;
+  padding: 20px;
+  width: 100%;
+}
+
+.button__modal {
+  text-transform: $big;
+  background-color: #2aab6d;
+}

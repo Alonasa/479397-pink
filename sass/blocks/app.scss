@@ -1,0 +1,53 @@
+.app {
+  color: $white;
+  background-color: #1d2631;
+}
+
+.app__photo {
+  height: 396px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%  100%;
+}
+
+.app__prewiev {
+  padding-top: 111px;
+}
+
+.app__container {
+  width: 280px;
+  min-height: 242px;
+  padding: 0 20px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.app__link-main {
+  margin-bottom: 31px;
+}
+
+.app__links {
+  min-width: 207px;
+  padding: 0;
+  margin: 0;
+  list-style: $list;
+}
+
+.app__list {
+  display: inline;
+}
+
+.app__link {
+  text-decoration: $list;
+  padding-right: 32px;
+}
+
+.app__accessibility {
+  padding: 0;
+  margin: 0;
+  line-height: $s-med;
+  font-size: $s-xsmall;
+  font-weight: $fw-small;
+  padding-top: 18px;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.modal {
+  @include font-small;
+  text-align: center;
+  background-color: $white;
+  padding: 45px 0 50px;
+}
+
+.modal__wrapper {
+  padding: 0 20px;
+}
+
+.modal__success--block {
+  @include zero;
+  background-color: $main-pink;
+  height: 164px;
+}
