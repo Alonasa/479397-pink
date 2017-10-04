@@ -22,3 +22,15 @@ img {
   padding: 0;
   border: 0;
 }
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: 960px;
+  }
+}
