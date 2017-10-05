@@ -1,13 +1,5 @@
 .app {
   color: $white;
-  background-color: #1d2631;
-}
-
-.app__photo {
-  height: 396px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50%  100%;
 }
 
 .app__prewiev {
@@ -20,6 +12,7 @@
   padding: 0 20px;
   margin: 0 auto;
   padding-top: 30px;
+  background-color: #1d2631;
 }
 
 .app__link-main {
