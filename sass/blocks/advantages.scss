@@ -14,13 +14,17 @@
   font-weight: $fw-small;
   font-size: $s-med;
   text-align: center;
-  padding-top: 20px;
+  height: 220px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .advantages__question {
   font-weight: $fw-small;
   font-size: $s-med;
   line-height: 30px;
+  padding-top: 15px;
 }
 
 .advantages__offer {
@@ -32,7 +36,7 @@
   padding: 0;
   margin: 0;
   list-style: $list;
-  padding-top: 88px;
+  padding-top: 54px;
   text-align: center;
 }
 
@@ -50,9 +54,10 @@
 }
 
 .advantages__description {
-  margin: 0 auto;
+  margin: 0;
   padding-top: 13px;
   text-align: center;
   font-size: $s-xsmall;
   font-weight: $fw-med;
+  letter-spacing: 0.5px;
 }

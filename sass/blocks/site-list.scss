@@ -76,14 +76,18 @@
   display: block;
   width: 70px;
   height: 50px;
-  background-color: $main-blue;
   cursor: pointer;
   border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
 
-  &:hover,
-  &:active {
-    background-color: $main-blue;
-  }
+.site-list--closed {
+  min-height: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.site-list--opened {
+  min-height: 326px;
 }
 
 .site-list--closed .site-list__toggle::before {
@@ -166,10 +170,24 @@
   .site-list--nojs .site-list__toggle {
     display: block;
   }
+}
 
-  .site-list--nojs .site-list__wrapper {
-    position: static;
-    min-height: 0;
+@media (min-width: $tablet-width) {
+  .site-list__logo-block {
+    height: 110px;
+  }
+
+  .site-list__logo-image {
+    padding: 26px 0 40px;
+  }
+
+  .site-list--opened .site-list__nav-block {
+    top: 110px;
+  }
+
+  .site-list__toggle {
+    top: 25px;
+    right: 25px;
   }
 }
 
@@ -205,11 +223,6 @@
 
   .site-list__item--logo {
     padding: 0;
-  }
-
-  .site-list__link {
-    text-decoration: none;
-    color: $white;
   }
 
   .site-list__toggle {

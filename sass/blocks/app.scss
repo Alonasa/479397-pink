@@ -1,18 +1,39 @@
 .app {
+  @include zero;
   color: $white;
 }
 
+.app__photo {
+  height: 286px;
+  text-align: center;
+  padding-top: 180px;
+  position: relative;
+  top: -73px;
+  z-index: -5;
+  background: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .app__prewiev {
-  padding-top: 111px;
+  position: relative;
+  left: -31px;
 }
 
 .app__container {
+  margin-top: -73px;
   width: 280px;
   min-height: 242px;
   padding: 0 20px;
-  margin: 0 auto;
   padding-top: 30px;
   background-color: #1d2631;
+}
+
+.app__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .app__link-main {
@@ -20,19 +41,18 @@
 }
 
 .app__links {
-  min-width: 207px;
+  width: 207px;
   padding: 0;
   margin: 0;
   list-style: $list;
-}
-
-.app__list {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .app__link {
   text-decoration: $list;
-  padding-right: 32px;
 }
 
 .app__accessibility {
@@ -43,4 +63,38 @@
   font-weight: $fw-small;
   padding-top: 18px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .app__photo {
+    position: relative;
+    top: -110px;
+    left: 0;
+    z-index: -5;
+    content: "";
+    background: url("../img/bg-back-mobile@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .app__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app__link-main {
+    margin-bottom: 31px;
+  }
+
+  .app__links {
+    width: 207px;
+    padding: 0;
+    margin: 0;
+    list-style: $list;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
