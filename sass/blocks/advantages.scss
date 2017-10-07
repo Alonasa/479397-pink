@@ -14,8 +14,8 @@
   font-weight: $fw-small;
   font-size: $s-med;
   text-align: center;
-  height: 220px;
-  background-image: url("../img/bg-triangle-white.svg");
+  height: 224px;
+  background: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -24,7 +24,7 @@
   font-weight: $fw-small;
   font-size: $s-med;
   line-height: 30px;
-  padding-top: 15px;
+  padding-top: 19px;
 }
 
 .advantages__offer {
@@ -36,12 +36,13 @@
   padding: 0;
   margin: 0;
   list-style: $list;
-  padding-top: 54px;
+  padding-top: 53px;
   text-align: center;
 }
 
 .advantages__item {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .advantages__title {
@@ -50,14 +51,13 @@
   font-size: $s-small;
   color: $black;
   font-weight: $fw-bold;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 
 .advantages__description {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 13px;
   text-align: center;
   font-size: $s-xsmall;
   font-weight: $fw-med;
-  letter-spacing: 0.5px;
 }

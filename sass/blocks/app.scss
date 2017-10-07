@@ -3,12 +3,20 @@
   color: $white;
 }
 
+.app__title {
+  color: $white;
+  font-size: 40px;
+  font-weight: $fw-small;
+  line-height: 48px;
+  display: none;
+}
+
 .app__photo {
   height: 286px;
   text-align: center;
   padding-top: 180px;
   position: relative;
-  top: -73px;
+  top: -70px;
   z-index: -5;
   background: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50%;
@@ -19,14 +27,16 @@
 .app__prewiev {
   position: relative;
   left: -31px;
+  top: -1px;
 }
 
 .app__container {
-  margin-top: -73px;
-  width: 280px;
+  margin-top: -70px;
+  margin-bottom: 0;
+  min-width: 280px;
   min-height: 242px;
   padding: 0 20px;
-  padding-top: 30px;
+  padding-top: 29px;
   background-color: #1d2631;
 }
 
@@ -66,35 +76,86 @@
 }
 
 @media (min-width: $tablet-width) {
-  .app__photo {
+  .app {
+    @include zero;
+    min-height: 728px;
     position: relative;
     top: -110px;
+    bottom: 0;
     left: 0;
-    z-index: -5;
+    z-index: -6;
     content: "";
     background: url("../img/bg-back-mobile@1x.jpg");
+    background-color: rgba(0, 0, 0, 0);
     background-size: cover;
     background-repeat: no-repeat;
   }
 
+  .app__title {
+    @include zero;
+    display: block;
+    width: 200px;
+    text-align: center;
+  }
+
+  .app__photo {
+    @include zero;
+    background: none;
+  }
+
+  .app__prewiev {
+    top: 250px;
+    left: 180px;
+  }
+
+  .app__container {
+    @include zero;
+    margin-top: -84px;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: $clear;
+  }
+
   .app__wrapper {
+    padding: $indent;
+    width: 300px;
+    min-height: 418px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
   }
 
   .app__link-main {
-    margin-bottom: 31px;
+    width: 224px;
+    margin-top: 20px;
   }
 
   .app__links {
-    width: 207px;
-    padding: 0;
-    margin: 0;
-    list-style: $list;
+    width: 206px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+  }
+
+  .app__accessibility {
+    font-size: $s-small;
+    line-height: $s-med;
+    letter-spacing: -0.5px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .app {
+    min-height: 853px;
+  }
+
+  .app__title {
+    width: 235px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
