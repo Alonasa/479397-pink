@@ -20,8 +20,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    min-width: 960px;
+  .main-nav {
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__wrapper {
+    width: 960px;
   }
 }

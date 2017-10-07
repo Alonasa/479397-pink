@@ -12,11 +12,11 @@
 }
 
 .app__photo {
-  height: 286px;
+  height: 285px;
   text-align: center;
   padding-top: 180px;
   position: relative;
-  top: -70px;
+  margin-top: -70px;
   z-index: -5;
   background: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50%;
@@ -31,8 +31,6 @@
 }
 
 .app__container {
-  margin-top: -70px;
-  margin-bottom: 0;
   min-width: 280px;
   min-height: 242px;
   padding: 0 20px;
@@ -78,17 +76,23 @@
 @media (min-width: $tablet-width) {
   .app {
     @include zero;
-    min-height: 728px;
+    height: 772px;
     position: relative;
-    top: -110px;
-    bottom: 0;
+    margin-top: -155px;
     left: 0;
     z-index: -6;
     content: "";
     background: url("../img/bg-back-mobile@1x.jpg");
     background-color: rgba(0, 0, 0, 0);
+    background-position: 50% 100%;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .app__container {
+    @include zero;
+    margin-top: -39px;
+    background-color: $clear;
   }
 
   .app__title {
@@ -106,14 +110,6 @@
   .app__prewiev {
     top: 250px;
     left: 180px;
-  }
-
-  .app__container {
-    @include zero;
-    margin-top: -84px;
-    margin-bottom: 0;
-    width: 100%;
-    background-color: $clear;
   }
 
   .app__wrapper {
@@ -149,7 +145,22 @@
 
 @media (min-width: $desktop-width) {
   .app {
-    min-height: 853px;
+    min-height: 898px;
+  }
+
+  .app__photo {
+    height: 263px;
+  }
+
+  .app__container {
+    margin: 0 auto;
+    width: $desktop-width;
+  }
+
+  .app__wrapper {
+    @include zero;
+    padding: 0 10px;
+    height: 496px;
   }
 
   .app__title {

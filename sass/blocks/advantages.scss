@@ -1,6 +1,7 @@
 .advantages {
   color: $main-blue;
   font-weight: $fw-small;
+  text-align: center;
 }
 
 .advantages__container {
@@ -60,4 +61,26 @@
   text-align: center;
   font-size: $s-xsmall;
   font-weight: $fw-med;
+}
+
+.advantages__friends {
+  padding-bottom: 318px;
+  position: relative;
+}
+
+.advantages__friends::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 278px;
+  bottom: 0;
+  right: 57px;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+
+  }
 }

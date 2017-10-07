@@ -197,14 +197,14 @@
 @media (min-width: $desktop-width) {
   .site-list {
     @include font-medium-line;
-    padding: $indent;
+    padding: 0 10px;
     min-height: 110px;
     text-transform: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: $clear;
   }
 
   .site-list__logo-block {
