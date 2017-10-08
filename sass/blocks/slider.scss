@@ -1,0 +1,54 @@
+.slider {
+  @include zero;
+}
+
+.slider input[type="radio"] {
+  @include zero;
+  opacity: 0;
+}
+
+.slider__controlls {
+  position: relative;
+  bottom: -298px;
+  left: 50%;
+  width: 240px;
+  height: 24px;
+  margin-left: -120px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.slider__controlls label {
+  display: inline-block;
+  vertical-align: top;
+  width: 12px;
+  height: 12px;
+  margin: 0 3px;
+  background-color: $main-blue;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__controlls label:hover {
+  background-color: $main-blue;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 3px solid $main-blue;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__btn1:checked ~ .slider__item--1 {
+  display: block;
+}
+
+.slider__btn2:checked ~ .slider__item--2 {
+  display: block;
+}
+
+.slider__btn3:checked ~ .slider__item--3 {
+  display: block;
+}

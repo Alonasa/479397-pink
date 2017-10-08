@@ -76,7 +76,7 @@
 @media (min-width: $tablet-width) {
   .app {
     @include zero;
-    height: 772px;
+    height: 813px;
     position: relative;
     margin-top: -155px;
     left: 0;
@@ -91,7 +91,7 @@
 
   .app__container {
     @include zero;
-    margin-top: -39px;
+    margin-top: 0;
     background-color: $clear;
   }
 

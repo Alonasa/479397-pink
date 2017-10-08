@@ -1,5 +1,11 @@
 .reviews {
+  @include zero;
+  margin-bottom: 66px;
   line-height: 30px;
+  min-height: 377px;
+  background: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .reviews__container {
@@ -9,12 +15,13 @@
 }
 
 .reviews__item {
-  padding: 0;
-  margin: 0;
+  @include zero;
+  padding-top: 18px;
   text-align: center;
 }
 
 .reviews__author-name {
+  @include zero;
   font-size: $s-small;
   font-weight: $fw-bold;
   font-style: normal;
@@ -22,6 +29,8 @@
 }
 
 .reviews__text {
+  @include zero;
+  padding-top: 12px;
   font-size: $s-xsmall;
   font-weight: $fw-med;
   color: $main-blue;
