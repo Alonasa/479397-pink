@@ -9,7 +9,7 @@
 
 .slider__controlls {
   position: relative;
-  bottom: -298px;
+  bottom: -271px;
   left: 50%;
   width: 240px;
   height: 24px;
@@ -21,21 +21,37 @@
 .slider__controlls label {
   display: inline-block;
   vertical-align: top;
+  width: 6px;
+  height: 6px;
+  margin: 0 7px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__controlls:checked + label {
   width: 12px;
   height: 12px;
   margin: 0 3px;
-  background-color: $main-blue;
+  background-color: $clear;
+  border: 3px solid $main-blue;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .slider__controlls label:hover {
-  background-color: $main-blue;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: 3px solid $main-blue;
+  background-color: rgba(40, 54, 69, 0.6);
 }
+
+input[type="radio"]:checked + .slider__controlls label {
+  width: 12px;
+  height: 12px;
+  margin: 0 3px;
+  background-color: $clear;
+  border: 3px solid $main-blue;
+  border-radius: 50%;
+}
+
 
 .slider__item {
   display: none;
@@ -51,4 +67,12 @@
 
 .slider__btn3:checked ~ .slider__item--3 {
   display: block;
+}
+
+.slider__btn2:checked ~ .slider__item--1 {
+  display: none;
+}
+
+.slider__btn3:checked ~ .slider__item--2 {
+  display: none;
 }
