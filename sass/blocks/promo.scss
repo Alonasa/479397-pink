@@ -1,0 +1,19 @@
+.promo {
+  @include zero;
+  min-height: 237px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 1%;
+  position: relative;
+  top: -65px;
+  z-index: -5;
+  margin-bottom: -65px;
+}
+
+.promo__header {
+  @include zero;
+  @include font-large;
+  color: $white;
+  padding: 96px 30px 50px;
+  text-align: center;
+}

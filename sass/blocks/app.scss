@@ -12,16 +12,13 @@
 }
 
 .app__photo {
-  height: 285px;
-  text-align: center;
-  padding-top: 180px;
-  position: relative;
-  margin-top: -70px;
-  z-index: -1;
-  background: #2d3c4b url("../img/bg-back-mobile@1x.jpg");
-  background-position: 50%;
-  background-size: cover;
+  min-height: 285px;
+  background-image: #2d3c4b url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 15%;
+  position: relative;
+  top: -20px;
+  z-index: -1;
 }
 
 .app__prewiev {
@@ -79,11 +76,13 @@
   }
 
   .app__photo {
-    height: 660px;
+    height: 285px;
     text-align: center;
+    padding-top: 180px;
     position: relative;
-    margin-top: -110px;
-    background: #2d3c4b url("../img/bg-back-mobile@1x.jpg");
+    margin-top: -70px;
+    z-index: -1;
+    background-image: #2d3c4b url("../img/bg-back-mobile@1x.jpg");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
