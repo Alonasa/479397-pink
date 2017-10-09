@@ -1,6 +1,30 @@
 .inner-footer {
-  margin: 40px 0;
-  padding: $indent;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $white;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.inner-footer__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    min-height: 128px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    min-height: 190px;
+  }
 }
 
 .inner-footer__logo-image {
@@ -12,5 +36,15 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+  }
+}
+
+.inner-footer__social {
+  @media (min-width: $tablet-width) {
+    min-width: 180px;
   }
 }

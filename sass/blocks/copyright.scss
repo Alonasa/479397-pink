@@ -1,3 +1,7 @@
 .copyright__text {
   @include font-middle;
+
+  @media (min-width: $desktop-width) {
+    @include font-medium-line;
+  }
 }

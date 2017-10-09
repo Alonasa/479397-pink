@@ -1,6 +1,17 @@
 .prices {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 97px;
   line-height: 30px;
   background-color: $main-pink;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 96px;
+  }
 }
 
 .prices__wrapper {
@@ -9,11 +20,11 @@
   overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    width: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: 940px;
   }
 }
 
@@ -47,7 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 236px;
+    width: 230px;
   }
 }
 
@@ -64,6 +75,13 @@
     @include zero;
     font-size: 16px;
     font-weight: $fw-bold;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $s-small;
+    font-weight: $fw-bold;
+    line-height: 32px;
+    padding: 10px 0 9px;
   }
 }
 
@@ -85,7 +103,12 @@
   font-weight: $fw-small;
 
   @media (min-width: $tablet-width) {
-    font-size: 18px;
+    font-size: $s-small;
+    font-weight: $fw-small;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: $s-med;
     font-weight: $fw-small;
   }
 }
@@ -99,5 +122,11 @@
     @include font-small;
     text-transform: none;
     padding: 5px 0 10px 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-medium;
+    text-transform: none;
+    padding: 13px 0 15px 20px;
   }
 }

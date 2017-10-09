@@ -10,12 +10,20 @@
 .slider__controlls {
   position: relative;
   bottom: -271px;
+  margin-bottom: -30px;
   left: 50%;
   width: 240px;
   height: 24px;
   margin-left: -120px;
   text-align: center;
-  z-index: 1000;
+
+  @media (min-width: $tablet-width) {
+    bottom: -227px;
+  }
+
+  @media (min-width: $desktop-width) {
+    opacity: 0;
+  }
 }
 
 .slider__controlls label {
@@ -51,22 +59,22 @@
   display: none;
 }
 
-.slider__btn1:checked ~ .slider__item--1 {
+.slider__btn1:checked ~ .slider__items .slider__item--1 {
   display: block;
 }
 
-.slider__btn2:checked ~ .slider__item--2 {
+.slider__btn2:checked ~ .slider__items .slider__item--2 {
   display: block;
 }
 
-.slider__btn3:checked ~ .slider__item--3 {
+.slider__btn3:checked ~ .slider__items .slider__item--3 {
   display: block;
 }
 
-.slider__btn2:checked ~ .slider__item--1 {
+.slider__btn2:checked ~ .slider__items .slider__item--1 {
   display: none;
 }
 
-.slider__btn3:checked ~ .slider__item--2 {
+.slider__btn3:checked ~ .slider__items .slider__item--2 {
   display: none;
 }
