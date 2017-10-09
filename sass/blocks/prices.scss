@@ -1,37 +1,103 @@
 .prices {
-  text-transform: $big;
   line-height: 30px;
+  background-color: $main-pink;
+}
+
+.prices__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  overflow-x: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .prices__list {
-  padding: 0;
-  margin: 0;
-  list-style: $list;
+  table-layout: fixed;
+  margin: 0 auto;
+  width: 100%;
+  background-color: $white;
+  word-wrap: break-word;
+  border-collapse: collapse;
+  transform: translateX(-536px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(0);
+    width: 624px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.prices__header,
+.prices__value {
+  border: 2px solid $main-pink;
+  width: 276px;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    word-wrap: break-word;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 236px;
+  }
 }
 
 .prices__header {
-  min-height: 98px;
+  padding: 8px 0 11px;
+  height: 79px;
+  text-transform: $big;
   background-color: $main-blue;
   color: $white;
   text-align: center;
-  border-bottom: 2px solid $main-pink;
+
+
+  @media (min-width: $tablet-width) {
+    @include zero;
+    font-size: 16px;
+    font-weight: $fw-bold;
+  }
 }
 
+.prices__header--empty {
+  @media (min-width: $tablet-width) {
+    background-color: $main-pink;
+  }
+}
+
+
 .prices__title {
-  padding: 0;
-  margin: 0;
   font-size: $s-small;
   font-weight: $fw-bold;
-  padding-top: 16px;
 }
 
 .prices__rate {
+  @include zero;
   font-size: $s-med;
   font-weight: $fw-small;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    font-weight: $fw-small;
+  }
 }
 
-.prices__body {
-  font-size: $s-xsmall;
-  font-weight: $fw-med;
-  padding-left: 60px;
+.prices__value {
+  @include font-xsmall;
+  text-transform: $big;
+  padding: 13px 0 16px 21px;
+
+  @media (min-width: $tablet-width) {
+    @include font-small;
+    text-transform: none;
+    padding: 5px 0 10px 17px;
+  }
 }

@@ -17,7 +17,7 @@
   padding-top: 180px;
   position: relative;
   margin-top: -70px;
-  z-index: -5;
+  z-index: -1;
   background: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50%;
   background-size: cover;
@@ -75,23 +75,25 @@
 
 @media (min-width: $tablet-width) {
   .app {
-    @include zero;
-    height: 813px;
+    min-height: 728px;
+  }
+
+  .app__photo {
+    height: 660px;
+    text-align: center;
     position: relative;
-    margin-top: -155px;
-    left: 0;
-    z-index: -6;
-    content: "";
+    margin-top: -110px;
     background: url("../img/bg-back-mobile@1x.jpg");
-    background-color: rgba(0, 0, 0, 0);
-    background-position: 50% 100%;
+    background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .app__container {
     @include zero;
-    margin-top: 0;
+    position: relative;
+    margin-top: -640px;
+    // margin-bottom: -530px;
     background-color: $clear;
   }
 
@@ -100,11 +102,6 @@
     display: block;
     width: 200px;
     text-align: center;
-  }
-
-  .app__photo {
-    @include zero;
-    background: none;
   }
 
   .app__prewiev {
@@ -149,24 +146,27 @@
   }
 
   .app__photo {
-    height: 263px;
+    min-height: 673px;
   }
 
   .app__container {
     margin: 0 auto;
+    margin-top: -635px;
     width: $desktop-width;
   }
 
   .app__wrapper {
     @include zero;
     padding: 0 10px;
-    height: 496px;
+    height: 512px;
   }
 
   .app__title {
     width: 235px;
     text-align: center;
     font-size: 50px;
+    font-weight: $fw-small;
     line-height: 60px;
+    letter-spacing: -1.7px;
   }
 }

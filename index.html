@@ -112,7 +112,7 @@
         </div>
       </section>
       <section class="effect">
-        <div class="effecr__container">
+        <div class="effecr__wrapper">
           <h2 class="effect__title">Эффект на 24 часа!</h2>
           <p class="effect__description">
             Британские ученые провели исследования
@@ -127,9 +127,9 @@
         <div class="reviews__container">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="reviews__list slider">
-            <input class="reviews__button slider__btn slider__btn1" type="radio" id="slider__btn1" checked>
-            <input class="reviews__button slider__btn slider__btn2" type="radio" id="slider__btn2">
-            <input class="reviews__button slider__btn slider__btn3" type="radio" id="slider__btn3">
+            <input class="reviews__button slider__btn slider__btn1" name="slider" type="radio" id="slider__btn1" checked>
+            <input class="reviews__button slider__btn slider__btn2" name="slider" type="radio" id="slider__btn2">
+            <input class="reviews__button slider__btn slider__btn3" name="slider" type="radio" id="slider__btn3">
             <div class="reviews__slider-control slider__controlls">
               <label class="reviews__controller slider__controller" for="slider__btn1"></label>
               <label class="reviews__controller slider__controller" for="slider__btn2"></label>
@@ -158,49 +158,52 @@
       </section>
       <section class="prices">
         <h2 class="visually-hidden">Тарифы приложения Пинк</h2>
-        <ul class="prices__list">
-          <li class="prices__item">
-            <div class="prices__header">
-              <h3 class="prices__title">Мини</h3>
-              <span class="prices__rate">1,99 usd</span>
+        <div class="prices__wrapper">
+          <table class="prices__list">
+            <tr class="prices__item">
+              <td class="prices__header prices__header--empty">
+              </td>
+              <td class="prices__header">
+                <b class="prices__title">База</b>
+                <p class="prices__rate">1,99 USD</p>
+              </td>
+              <td class="prices__header">
+                <b class="prices__title">Стандарт</b>
+                <p class="prices__rate">3,99 USD</p>
+              </td>
+              <td class="prices__header">
+                <b class="prices__title">Анлим</b>
+                <p class="prices__rate">9,99 USD</p>
+              </td>
+            </tr>
+            <tr class="prices__item">
+              <td class="prices__value prices__pink-filter">Розовый фильтр</td>
+              <td class="prices__value prices__pink-filter">Розовый фильтр</td>
+              <td class="prices__value prices__pink-filter">Розовый фильтр</td>
+              <td class="prices__value prices__pink-filter">Розовый фильтр</td>
+            </tr>
+            <tr class="prices__item">
+              <td class="prices__value prices__smile">Смайлики</td>
+              <td class="prices__value prices__smile">Смайлики</td>
+              <td class="prices__value prices__smile">Смайлики</td>
+              <td class="prices__value prices__smile">Смайлики</td>
+            </tr>
+            <tr class="prices__item">
+              <td class="prices__value prices__comment">Комментарии</td>
+              <td class="prices__value prices__comment">Комментарии</td>
+              <td class="prices__value prices__comment">Комментарии</td>
+              <td class="prices__value prices__comment">Комментарии</td>
+            </tr>
+          </table>
+          <div class="prices__controls">
+            <input class="visually-hidden prices__input prices__input-min" type="radio" name="prices-toggler" id="prices__min">
+            <input class="visually-hidden prices__input prices__input-standart" type="radio" name="prices-toggler" id="prices__standart" checked>
+            <input class="visually-hidden prices__input prices__input-max" type="radio" name="prices-toggler" id="prices__max">
+            <div class="prices__slider-control">
+              <label class="prices__toggler prices__toggler-min" for="prices__min"></label>
+              <label class="prices__toggler prices__toggler-standart" for="prices__standart"></label>
+              <label class="prices__toggler prices__toggler-max" for="prices__max"></label>
             </div>
-            <div class="prices__body value">
-              <p class="prices__value value__pink-filter value__checked">Розовый Фильтр</p>
-              <p class="prices__value value__smiles">Смайлики</p>
-              <p class="prices__value value__comments">Комментарии</p>
-            </div>
-          </li>
-          <li class="prices__item">
-            <div class="prices__header">
-              <h3 class="prices__title">Стандарт</h3>
-              <span class="prices__rate">3,99 usd</span>
-            </div>
-            <div class="prices__body value">
-              <p class="prices__value value__pink-filter value__checked">Розовый Фильтр</p>
-              <p class="prices__value value__smiles value__checked">Смайлики</p>
-              <p class="prices__value value__comments">Комментарии</p>
-            </div>
-          </li>
-          <li class="prices__item">
-            <div class="prices__header">
-              <h3 class="prices__title">Макси</h3>
-              <span class="prices__rate">5,99 usd</span>
-            </div>
-            <div class="prices__body value">
-              <p class="prices__value value__pink-filter value__checked">Розовый Фильтр</p>
-              <p class="prices__value value__smiles value__checked">Смайлики</p>
-              <p class="prices__value value__comments value__checked">Комментарии</p>
-            </div>
-          </li>
-        </ul>
-        <div class="prices__controls">
-          <input class="visually-hidden prices__input prices__input-min" type="radio" name="prices-toggler" id="prices__min">
-          <input class="visually-hidden prices__input prices__input-standart" type="radio" name="prices-toggler" id="prices__standart" checked>
-          <input class="visually-hidden prices__input prices__input-max" type="radio" name="prices-toggler" id="prices__max">
-          <div class="prices__slider-control">
-            <label class="prices__toggler prices__toggler-min" for="prices__min"></label>
-            <label class="prices__toggler prices__toggler-standart" for="prices__standart"></label>
-            <label class="prices__toggler prices__toggler-max" for="prices__max"></label>
           </div>
         </div>
       </section>

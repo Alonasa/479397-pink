@@ -1,0 +1,9 @@
+.effect {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 620px;
+    margin: 0 auto;
+  }
+}
