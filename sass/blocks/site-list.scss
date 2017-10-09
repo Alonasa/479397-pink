@@ -87,6 +87,10 @@
 
 .site-list--opened {
   min-height: 326px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 365px;
+  }
 }
 
 .site-list--closed .site-list__toggle::before {

@@ -3,14 +3,26 @@
   margin: 0 auto;
   background-color: $white;
   display: none;
+  min-height: 256px;
 
   @media (min-width: $tablet-width) {
     display: block;
   }
 }
 
+.inner-footer__general {
+  display: block;
+}
+
 .inner-footer__wrapper {
   margin: 0 auto;
+  width: 280px;
+  margin-top: 28px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 
   @media (min-width: $tablet-width) {
     width: 620px;

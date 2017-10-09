@@ -1,0 +1,38 @@
+.promo {
+  @include zero;
+  min-height: 235px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 1%;
+  position: relative;
+  top: -65px;
+  z-index: -5;
+  margin-bottom: -65px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 438px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 1%;
+    position: relative;
+    top: -110px;
+    z-index: -5;
+    margin-bottom: -110px;
+  }
+}
+
+.promo__header {
+  @include zero;
+  @include font-large;
+  color: $white;
+  padding: 96px 30px 50px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: $fw-small;
+    padding-top: 178px;
+  }
+}

@@ -1,5 +1,8 @@
 .post-photo {
   background-color: $main-pink;
+  min-height: 911px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .post-photo__header {
@@ -8,12 +11,15 @@
 }
 
 .post-photo__container {
-  padding: $indent;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 46px;
 }
 
 .post-photo__title {
   @include zero;
   padding: 20px 20px 48px;
+  text-align: center;
 }
 
 .post-photo__button {
