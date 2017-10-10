@@ -55,16 +55,37 @@
 .photos__container {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    min-height: 1407px;
+  }
 }
 
 .photos__body {
   @include zero;
   list-style: $list;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    min-height: 1405px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
 }
 
 .photos__list {
   background-color: $main-pink;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    min-height: 455px;
+    margin-bottom: 0;
+  }
 }
 
 .photos__item {
@@ -89,6 +110,7 @@
     position: relative;
     top: 0;
     left: 0;
+    margin-bottom: 50px;
   }
 }
 

@@ -1,25 +1,88 @@
 .post-photo {
   background-color: $main-pink;
-  min-height: 911px;
+  min-height: 910px;
   width: 100%;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-height: 511px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .post-photo__header {
   @include font-small;
   background-color: $white;
+  min-height: 153px;
+
+  @media (min-width: $tablet-width) {
+    @include font-medium;
+    min-height: 192px;
+  }
 }
 
 .post-photo__container {
   width: 280px;
   margin: 0 auto;
-  margin-top: 46px;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    width: 620px;
+    min-height: 511px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.post-photo__download {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .post-photo__title {
   @include zero;
-  padding: 20px 20px 48px;
+  padding: 20px 20px 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include zero;
+    width: 430px;
+    margin: 0 auto;
+    padding-top: 63px;
+  }
+}
+
+.post-photo__description {
+  @include zero;
+  text-align: center;
+}
+
+.post-photo__picture {
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    @include zero;
+    width: 300px;
+    min-height: 400px;
+  }
+}
+
+.post-photo__settings {
+  @media (min-width: $tablet-width) {
+    width: 275px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .post-photo__button {
