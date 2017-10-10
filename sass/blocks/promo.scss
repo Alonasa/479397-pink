@@ -1,6 +1,10 @@
 .promo {
   @include zero;
+<<<<<<< HEAD
   min-height: 235px;
+=======
+  min-height: 237px;
+>>>>>>> 77765a79feeaeb1bf98e2759ed0d7f2980ea8d9e
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 1%;
@@ -8,6 +12,7 @@
   top: -65px;
   z-index: -5;
   margin-bottom: -65px;
+<<<<<<< HEAD
 
   @media (min-width: $tablet-width) {
     min-height: 438px;
@@ -20,6 +25,8 @@
     z-index: -5;
     margin-bottom: -110px;
   }
+=======
+>>>>>>> 77765a79feeaeb1bf98e2759ed0d7f2980ea8d9e
 }
 
 .promo__header {
@@ -28,6 +35,7 @@
   color: $white;
   padding: 96px 30px 50px;
   text-align: center;
+<<<<<<< HEAD
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
@@ -35,4 +43,6 @@
     font-weight: $fw-small;
     padding-top: 178px;
   }
+=======
+>>>>>>> 77765a79feeaeb1bf98e2759ed0d7f2980ea8d9e
 }

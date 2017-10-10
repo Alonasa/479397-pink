@@ -2,23 +2,6 @@
   @include zero;
 }
 
-.photos__head {
-  @include zero;
-  min-height: 172px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 23%;
-}
-
-.photos__promo {
-  @include zero;
-  color: $white;
-
-  @include font-large;
-  padding: 30px;
-  text-align: center;
-}
-
 .photos__description {
   @include font-small;
   background-color: $white;
