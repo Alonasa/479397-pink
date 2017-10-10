@@ -19,6 +19,11 @@
     min-height: 136px;
     padding-top: 92px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 580px;
+    min-height: 148px;
+  }
 }
 
 .photos__panoramic {
@@ -28,7 +33,11 @@
 
   @media (min-width: $tablet-width) {
     @include font-medium;
-    min-height: 509px;
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 506px;
   }
 }
 
@@ -50,6 +59,11 @@
     top: -428px;
     left: 500px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -428px;
+    left: 930px;
+  }
 }
 
 .photos__container {
@@ -59,6 +73,11 @@
   @media (min-width: $tablet-width) {
     width: 620px;
     min-height: 1407px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    min-height: 1165px;
   }
 }
 
@@ -75,6 +94,11 @@
     justify-content: space-between;
     align-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    min-height: 1164px;
+  }
 }
 
 .photos__list {
@@ -85,6 +109,10 @@
     width: 300px;
     min-height: 455px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 555px;
   }
 }
 
@@ -112,6 +140,11 @@
     left: 0;
     margin-bottom: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 883px;
+    padding: 24px 30px 24px 27px;
+  }
 }
 
 .photos__author-name {
@@ -135,6 +168,14 @@
   color: $pink;
   font-weight: $fw-small;
   padding: 14px 0 26.3px;
+
+  @media (min-width: $desktop-width) {
+    width: 248px;
+    height: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
 }
 
 .photos__rating-top {
@@ -146,7 +187,15 @@
     align-items: flex-end;
     position: absolute;
     top: 10px;
-    left: 456px;
+
+    @media (min-width: $desktop-width) {
+      width: 130px;
+      padding-left: 7px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 773px;
   }
 }
 
@@ -156,11 +205,19 @@
   @media (min-width: $tablet-width) {
     padding-right: 4px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 6px;
+  }
 }
 
 .photos__rating-counter {
   @media (min-width: $tablet-width) {
     padding-right: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 5px;
   }
 }
 
@@ -169,6 +226,10 @@
   color: $pink;
 
   @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
     order: 2;
   }
 }
