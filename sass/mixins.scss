@@ -8,6 +8,11 @@
   font-weight: 300;
 }
 
+@mixin small-bold {
+  font-size: 14px;
+  font-weight: 700;
+}
+
 @mixin font-small {
   font-size: 14px;
   font-weight: 400;

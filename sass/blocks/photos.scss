@@ -1,16 +1,35 @@
 .photos {
   @include zero;
+  background-color: $white;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .photos__description {
   @include font-small;
-  background-color: $white;
-  padding: 31px 38px 35px;
+  margin: 0 auto;
+  padding-top: 45px;
+  width: 244px;
+  min-height: 139px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font-medium;
+    width: 450px;
+    min-height: 136px;
+    padding-top: 92px;
+  }
 }
 
 .photos__panoramic {
-  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: -30px;
+
+  @media (min-width: $tablet-width) {
+    @include font-medium;
+    min-height: 509px;
+  }
 }
 
 .photos__top-rated {
@@ -23,12 +42,19 @@
   color: $white;
   background-color: $pink;
   position: relative;
-  top: 0;
+  top: -113px;
   left: 160px;
+  margin-bottom: -143px;
+
+  @media (min-width: $tablet-width) {
+    top: -428px;
+    left: 500px;
+  }
 }
 
 .photos__container {
-  padding: $indent;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .photos__body {
@@ -50,17 +76,29 @@
 
 .photos__top-value {
   @include zero;
-  margin: $indent;
+  width: 240px;
+  margin: 0 auto;
   padding: $indent;
   padding-top: 18px;
   background-color: $main-pink;
-  margin-top: 100px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 562px;
+    padding: 24px 31px 25px 27px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }
 
 .photos__author-name {
   font-weight: $fw-bold;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    @include small-bold;
+  }
 }
 
 .photos__comment {
@@ -77,11 +115,38 @@
   padding: 14px 0 26.3px;
 }
 
+.photos__rating-top {
+  @media (min-width: $tablet-width) {
+    width: 180px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: absolute;
+    top: 10px;
+    left: 456px;
+  }
+}
+
 .photos__like {
   padding-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 4px;
+  }
+}
+
+.photos__rating-counter {
+  @media (min-width: $tablet-width) {
+    padding-right: 17px;
+  }
 }
 
 .photos__likes-action {
   text-decoration: $list;
   color: $pink;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
