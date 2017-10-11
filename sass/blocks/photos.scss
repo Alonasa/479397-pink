@@ -207,14 +207,14 @@
 
 .photos__rating-top {
   @media (min-width: $tablet-width) {
-    width: 180px;
+    width: 119px;
     height: 20px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     position: absolute;
-    top: 10px;
-    left: 454px;
+    top: 11px;
+    left: 472px;
 
     @media (min-width: $desktop-width) {
       width: 118px;
