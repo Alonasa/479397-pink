@@ -119,8 +119,7 @@
 .photos__item {
   @include zero;
   @include font-xsmall;
-  padding: $indent;
-  padding-top: 12px;
+  padding: 12px 20px 0 17px;
 
   @media (min-width: $tablet-width) {
     padding: 18px 20px 0 27px;
@@ -135,8 +134,7 @@
   @include zero;
   width: 240px;
   margin: 0 auto;
-  padding: $indent;
-  padding-top: 18px;
+  padding: 18px 23px 0 17px;
   background-color: $main-pink;
   margin-bottom: 20px;
 
@@ -185,6 +183,8 @@
   color: $pink;
   font-weight: $fw-small;
   padding: 14px 0 26.3px;
+  display: flex;
+  align-items: flex-end;
 
   @media (min-width: $tablet-width) {
     width: 241px;
@@ -229,7 +229,7 @@
 }
 
 .photos__like {
-  padding-left: 15px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     @include zero;
