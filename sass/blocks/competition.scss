@@ -1,15 +1,11 @@
 .competition {
   @include zero;
   width: 100%;
+  background-color: $main-pink;
 }
-//
-// .competition__form {
-//   display: flex;
-//   flex-direction: column;
-// }
 
 .competition__head {
-  min-height: 169px;
+  min-height: 170px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 23%;
@@ -30,13 +26,18 @@
   @include font-small;
   padding: 46px 20px 18px;
   text-align: center;
+  background-color: $white;
+}
+
+.competition__data {
+  background-color: $white;
 }
 
 .competition__personal-data {
   @include zero;
   border: $list;
-  padding-bottom: 65px;
   margin: 0 auto;
+  padding-bottom: 65px;
   width: 280px;
   min-height: 320px;
   display: flex;
@@ -44,7 +45,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 
 .competition__form-item {
   height: 90px;
@@ -62,10 +62,15 @@
 
 .competition__input-info input[type="text"]::placeholder,
 .competition__input-field input[type="tel"]::placeholder,
-.competition__input-field input[type="email"]::placeholder,
+.competition__input-field input[type="email"]::placeholder {
+  @include font-medium-line;
+  color: $main-blue;
+}
+
 .competition__emotions-input textarea::placeholder {
   @include font-medium;
   color: $main-blue;
+  padding-left: 4px;
 }
 
 .competition__label {
@@ -85,11 +90,17 @@
   background-color: $main-pink;
   border: $list;
   margin: 0 auto;
-  min-height: 112px;
+  min-height: 300px;
+  width: 280px;
+  padding-bottom: 38px;
 }
 
+.competition__goals-contaiter {
+  width: 320px;
+  margin: 0 auto;
+}
 
-.competition__app legend,
+.competition__legend,
 .competition__emotions-input legend {
   @include zero;
   @include font-middle;
@@ -103,7 +114,7 @@
   @include font-middle;
   text-transform: $big;
   color: $pink;
-  margin: auto;
+  background-color: $main-pink;
   text-align: center;
   padding-top: 38px;
   min-height: 78px;
@@ -123,33 +134,83 @@
 
 .competition__list-option {
   min-height: 38px;
-  width: 280px;
+  padding-left: 70px;
 }
 
 .competition__personal-contacts {
   border: $list;
-  padding: $indent;
+  width: 280px;
+  min-height: 206px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.competition__contact-label {
+  display: none;
+}
+
+.competition__contacts-container {
+  background-color: $white;
+  min-height: 287px;
+}
+
+.competition__input-field {
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.competition__app-container {
+  margin: 0 auto;
+  min-height: 300px;
+  background-color: $main-pink;
 }
 
 .competition__app {
   @include zero;
   @include font-medium;
   border: $list;
-  background-color: $main-pink;
-  padding: $indent;
+  margin: 0 auto;
+  width: 280px;
+  min-height: 260px;
+  padding: 38px 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.competition__app-list {
+  @include zero;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .competition__app-item {
   list-style: $list;
+  min-height: 40px;
+  padding-left: 70px;
+}
+
+.competition__emotions-container {
+  padding-top: 38px;
+  background-color: $white;
+  min-height: 232px;
 }
 
 .competition__emotions-input {
+  padding: 0;
   border: $list;
-  padding: $indent;
+  width: 280px;
+  min-height: 232px;
+  margin: 0 auto;
 }
 
 .competition__textarea {
-  margin: 15px 0;
+  margin: 16px 0;
   width: 248px;
   height: 169px;
   padding: 14px;
@@ -157,17 +218,35 @@
   color: $main-blue;
 }
 
+.competition__sender {
+  background-color: $white;
+}
+
+.competition__sender-container {
+  width: 280px;
+  margin: auto;
+  padding-top: 26px;
+  min-height: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.competition__button {
+  @include button;
+  text-decoration: none;
+  display: block;
+  min-height: 63px;
+  border-radius: 3px;
+}
+
 .competition__requiered {
   @include font-small;
-  padding: $indent;
   text-transform: $big;
   text-align: center;
+  min-height: 20px;
 }
 
 .competition__star-marker {
   color: $pink;
-}
-
-.competition__list-lable {
-  margin-left: 30px;
 }
