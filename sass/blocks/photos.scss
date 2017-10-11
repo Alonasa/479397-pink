@@ -122,6 +122,10 @@
   padding: $indent;
   padding-top: 12px;
 
+  @media (min-width: $tablet-width) {
+    padding: 18px 20px 0 27px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 18px 20px 0 28px;
   }
@@ -164,6 +168,10 @@
 .photos__comment {
   @include zero;
 
+  @media (min-width: $tablet-width) {
+    min-height: 48px;
+  }
+
   @media (min-width: $desktop-width) {
     min-height: 48px;
   }
@@ -177,6 +185,15 @@
   color: $pink;
   font-weight: $fw-small;
   padding: 14px 0 26.3px;
+
+  @media (min-width: $tablet-width) {
+    width: 241px;
+    height: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 12px 0 24px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 240px;
@@ -197,6 +214,7 @@
     align-items: flex-end;
     position: absolute;
     top: 10px;
+    left: 454px;
 
     @media (min-width: $desktop-width) {
       width: 118px;
@@ -214,7 +232,7 @@
   padding-left: 15px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 4px;
+    @include zero;
   }
 
   @media (min-width: $desktop-width) {
@@ -247,6 +265,11 @@
 }
 
 .photos__users {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 300px;
     height: 400px;
