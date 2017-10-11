@@ -121,6 +121,10 @@
   @include font-xsmall;
   padding: $indent;
   padding-top: 12px;
+
+  @media (min-width: $desktop-width) {
+    padding: 18px 20px 0 28px;
+  }
 }
 
 .photos__top-value {
@@ -143,7 +147,8 @@
 
   @media (min-width: $desktop-width) {
     width: 883px;
-    padding: 24px 30px 24px 27px;
+    min-height: 40px;
+    padding: 24px 30px 0 27px;
   }
 }
 
@@ -158,6 +163,10 @@
 
 .photos__comment {
   @include zero;
+
+  @media (min-width: $desktop-width) {
+    min-height: 48px;
+  }
 }
 
 .photos__rating {
@@ -170,8 +179,9 @@
   padding: 14px 0 26.3px;
 
   @media (min-width: $desktop-width) {
-    width: 248px;
+    width: 240px;
     height: 20px;
+    padding-top: 9px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -189,8 +199,9 @@
     top: 10px;
 
     @media (min-width: $desktop-width) {
-      width: 130px;
-      padding-left: 7px;
+      width: 118px;
+      top: 15px;
+      padding-left: 16px;
     }
   }
 
@@ -207,7 +218,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 6px;
+    // padding-left: 6px;
+    @include zero;
   }
 }
 
@@ -231,5 +243,12 @@
 
   @media (min-width: $desktop-width) {
     order: 2;
+  }
+}
+
+.photos__users {
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
   }
 }
