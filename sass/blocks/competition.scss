@@ -1,9 +1,15 @@
 .competition {
   @include zero;
+  width: 100%;
 }
+//
+// .competition__form {
+//   display: flex;
+//   flex-direction: column;
+// }
 
 .competition__head {
-  min-height: 172px;
+  min-height: 169px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 23%;
@@ -13,35 +19,43 @@
   @include zero;
   @include font-large;
   color: $white;
-  padding: 30px 20px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 28px 0;
   text-align: center;
 }
 
 .competition__title {
   @include zero;
   @include font-small;
-  padding: 46px 25px 34px;
+  padding: 46px 20px 18px;
   text-align: center;
 }
 
 .competition__personal-data {
   @include zero;
   border: $list;
-  padding: $indent;
-  padding-bottom: 6px;
+  padding-bottom: 65px;
+  margin: 0 auto;
+  width: 280px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.competition__input-info {
-  @include zero;
-  margin-bottom: 3px;
+
+.competition__form-item {
+  height: 90px;
+  width: 280px;
 }
 
 .competition__input-info input[type="text"],
 .competition__input-field input[type="tel"],
 .competition__input-field input[type="email"] {
-  margin: 4px 0 15px;
   width: 234px;
-  padding: 20px 21px;
+  padding: 19px 21px;
   border: 2px solid #e5e5e5;
   color: $main-blue;
 }
@@ -58,7 +72,11 @@
   @include font-small;
   color: $pink;
   text-transform: $big;
-  padding: $indent;
+  padding-left: 22px;
+}
+
+.competition__input {
+  margin-top: 5px;
 }
 
 .competition__goals {
@@ -66,22 +84,46 @@
   @include font-medium;
   background-color: $main-pink;
   border: $list;
-  padding: $indent;
+  margin: 0 auto;
+  min-height: 112px;
 }
 
-.competition__goals legend,
+
 .competition__app legend,
 .competition__emotions-input legend {
   @include zero;
   @include font-middle;
-  padding-top: 96px;
   text-transform: $big;
   color: $pink;
   text-align: center;
 }
 
+.competition__personal-goals {
+  @include zero;
+  @include font-middle;
+  text-transform: $big;
+  color: $pink;
+  margin: auto;
+  text-align: center;
+  padding-top: 38px;
+  min-height: 78px;
+  width: 220px;
+}
+
 .competition__list-checkbox {
+  @include zero;
   list-style: $list;
+  width: 280px;
+  margin: 0 auto;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.competition__list-option {
+  min-height: 38px;
+  width: 280px;
 }
 
 .competition__personal-contacts {
@@ -124,4 +166,8 @@
 
 .competition__star-marker {
   color: $pink;
+}
+
+.competition__list-lable {
+  margin-left: 30px;
 }
