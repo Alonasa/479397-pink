@@ -12,14 +12,16 @@
 }
 
 .app__photo {
-  min-height: 285px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 15%;
-  background-size: cover;
+  height: 285px;
+  text-align: center;
+  padding-top: 180px;
   position: relative;
-  top: -70px;
+  margin-top: -70px;
   z-index: -1;
+  background: #2d3c4b url("../img/bg-back-mobile@1x.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .app__prewiev {
@@ -38,7 +40,6 @@
 
 .app__wrapper {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }
@@ -54,7 +55,6 @@
   list-style: $list;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -138,6 +138,7 @@
     letter-spacing: -0.5px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .app {
