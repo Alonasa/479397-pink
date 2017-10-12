@@ -4,6 +4,10 @@
   color: $white;
   padding: 20px;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .button__modal {
