@@ -61,7 +61,7 @@
 .competition__title {
   @include zero;
   @include font-small;
-  padding: 46px 20px 18px;
+  padding: 31px 20px 4px;
   text-align: center;
   background-color: $white;
 
@@ -124,7 +124,7 @@
   @include zero;
   border: $list;
   margin: 0 auto;
-  padding-bottom: 65px;
+  padding-bottom: 66px;
   width: 280px;
   min-height: 320px;
   display: flex;
@@ -213,7 +213,7 @@
 }
 
 .competition__input {
-  margin-top: 5px;
+  margin-top: 6px;
 
   @media (min-width: $desktop-width) {
     margin-top: 6px;
@@ -461,7 +461,7 @@
   margin: 0 auto;
   width: 280px;
   min-height: 260px;
-  padding: 38px 0;
+  padding-top: 38px;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
