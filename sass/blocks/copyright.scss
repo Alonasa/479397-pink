@@ -1,3 +1,18 @@
+.copyright {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
 .copyright__text {
   @include font-middle;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-medium-line;
+  }
 }

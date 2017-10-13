@@ -1,21 +1,238 @@
 .site-list {
-  padding: 0;
-  margin: 0;
+  @include zero;
+  background-color: $main-blue;
   font-size: $s-small;
   font-weight: $fw-bold;
   text-transform: $big;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-list__logo-block {
+  @include zero;
+  list-style: $list;
+}
+
+.site-list__nav-block {
+  @include zero;
+  list-style: $list;
 }
 
 .site-list__item {
-  padding: 15px 0;
+  padding: 17px 0 14px;
   list-style: $list;
   line-height: $s-big;
+  background-color: $main-blue;
+  border-bottom: 2px solid #000000;
+  outline: 1px solid #485461;
+  text-align: center;
+}
+
+.site-list__link:hover {
+  color: $pink;
+}
+
+.site-list__link:active {
+  color: $white;
+  opacity: 0.3;
+}
+
+.site-list__item--logo {
+  padding: 21px 20px 13px;
+  text-align: left;
+  position: relative;
 }
 
 .site-list__link {
   text-decoration: none;
   color: $white;
+}
+
+.site-list__logo-image {
+  width: 76px;
+}
+
+.site-list__logo:hover {
+  path {
+    fill: $pink;
+  }
+}
+
+.site-list__logo:active {
+  path {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
+
+.site-list__toggle {
+  @include zero;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.site-list--closed {
+  min-height: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.site-list--opened {
+  min-height: 326px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 367px;
+  }
+}
+
+.site-list--closed .site-list__toggle::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 50px;
+  height: 4px;
+  color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff, 0 30px 0 0 #ffffff;
+}
+
+.site-list--closed .site-list__toggle:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.site-list--opened .site-list__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .site-list--closed .site-list__item--active a {
+    border-bottom: none;
+  }
+
+  .site-list--closed .site-list__nav-block {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .site-list--opened .site-list__nav-block {
+    position: absolute;
+    top: 68px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    min-width: 200px;
+    min-height: 20vh;
+  }
+
+  .site-list--opened .site-list__nav-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 7px;
+    height: 100%;
+    box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.4);
+  }
+
+  .site-list--nojs .site-list__toggle {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__logo-block {
+    height: 110px;
+  }
+
+  .site-list__logo-image {
+    padding: 26px 0 40px;
+  }
+
+  .site-list__item {
+    padding: 16px 0 14px;
+  }
+
+  .site-list--opened .site-list__nav-block {
+    top: 110px;
+  }
+
+  .site-list__toggle {
+    top: 24px;
+    right: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    @include font-medium-line;
+    padding: 0 10px;
+    min-height: 110px;
+    text-transform: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $clear;
+  }
+
+  .site-list__logo-block {
+    width: 150px;
+  }
+
+  .site-list__nav-block {
+    min-width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-list__item {
+    border-bottom: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .site-list__item--logo {
+    padding: 0;
+  }
+
+  .site-list__toggle {
+    display: none;
+  }
 }

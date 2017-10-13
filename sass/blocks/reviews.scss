@@ -1,28 +1,132 @@
 .reviews {
+  @include zero;
+  width: 100%;
+  margin-bottom: 64px;
   line-height: 30px;
+  min-height: 377px;
+  background: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    min-height: 338px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 502px;
+    margin-bottom: 57px;
+  }
 }
 
 .reviews__container {
-  width: 280px;
-  padding: 0 20px;
   margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    min-height: 502px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.reviews__block {
+  @media (min-width: $tablet-width) {
+    min-height: 320px;
+  }
+}
+
+.reviews__list {
+  @include zero;
+  list-style: $list;
 }
 
 .reviews__item {
-  padding: 0;
-  margin: 0;
+  @include zero;
+  min-height: 320px;
+  padding-top: 18px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    padding-top: 9px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 684px;
+    min-height: 178px;
+    padding-top: 160px;
+  }
+}
+
+.reviews__addition {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include zero;
+    @include font-middle;
+    padding-top: 8px;
+    display: block;
+    min-height: 30px;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-medium;
+    padding-top: 0;
+  }
 }
 
 .reviews__author-name {
-  font-size: $s-small;
+  @include zero;
+  font-size: 20px;
   font-weight: $fw-bold;
   font-style: normal;
   color: $black;
+  min-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    padding-top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $s-med;
+    font-weight: $fw-bold;
+    padding-top: 38px;
+  }
 }
 
 .reviews__text {
+  @include zero;
   font-size: $s-xsmall;
   font-weight: $fw-med;
   color: $main-blue;
+  min-height: 90px;
+  padding-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $s-small;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-medium;
+  }
+}
+
+.reviews__quotes {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

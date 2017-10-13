@@ -1,4 +1,15 @@
 .page-header {
-  background-color: $main-blue;
-  min-height: 324px;
+  @include zero;
+  min-height: 100px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    @include zero;
+    min-height: 800px;
+  }
+}
+
+.page-header__inner {
+  min-height: 66px;
 }

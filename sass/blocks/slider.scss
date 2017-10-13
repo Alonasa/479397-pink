@@ -1,0 +1,79 @@
+.slider {
+  @include zero;
+}
+
+.slider input[type="radio"] {
+  @include zero;
+  opacity: 0;
+}
+
+.slider__controlls {
+  position: relative;
+  bottom: -271px;
+  margin-bottom: -30px;
+  left: 50%;
+  width: 240px;
+  height: 24px;
+  margin-left: -120px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    bottom: -227px;
+  }
+
+  @media (min-width: $desktop-width) {
+    opacity: 0;
+  }
+}
+
+.slider__controlls label {
+  display: inline-block;
+  vertical-align: top;
+  width: 6px;
+  height: 6px;
+  margin: 0 7px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__controlls label:hover {
+  background-color: rgba(40, 54, 69, 0.6);
+}
+
+.slider__btn1:checked ~ .slider__controlls label[for="slider__btn1"],
+.slider__btn2:checked ~ .slider__controlls label[for="slider__btn2"],
+.slider__btn3:checked ~ .slider__controlls label[for="slider__btn3"] {
+  width: 7px;
+  height: 7px;
+  margin: 0 3px;
+  background-color: $clear;
+  border: 3px solid $main-blue;
+  border-radius: 50%;
+  position: relative;
+  bottom: 4px;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__btn1:checked ~ .slider__items .slider__item--1 {
+  display: block;
+}
+
+.slider__btn2:checked ~ .slider__items .slider__item--2 {
+  display: block;
+}
+
+.slider__btn3:checked ~ .slider__items .slider__item--3 {
+  display: block;
+}
+
+.slider__btn2:checked ~ .slider__items .slider__item--1 {
+  display: none;
+}
+
+.slider__btn3:checked ~ .slider__items .slider__item--2 {
+  display: none;
+}

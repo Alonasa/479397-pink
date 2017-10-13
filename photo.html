@@ -7,43 +7,60 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
   <body>
-    <header class="page-header">
-      <h1 class="visually-hidden">Официальный сайт приложения Пинк</h1>
-      <nav class="main-nav">
-        <h2 class="visually-hidden">Мобильное приложение Пинк</h2>
+    <header class="page-header page-header__inner">
+      <h1 class="visually-hidden">Рейтинг фотографий пользователей</h1>
+      <nav class="main-nav main-nav__inner">
+        <h2 class="visually-hidden">Яркие фото</h2>
         <div class="main-nav__wrapper">
-          <a class="main-nav__logo">
-          <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение Пинк">
-          </a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__item--active" href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
+          <div class="main-nav__list site-list site-list--nojs site-list--opened">
+            <ul class="site-list__logo-block">
+              <li class="site-list__item--logo">
+                <a class="site-list__logo">
+                  <svg class="site-list__logo-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+                    <g>
+                      <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+                      <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+                      <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+                      <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+                    </g>
+                  </svg>
+                </a>
+                <button class="site-list__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+              </li>
+            </ul>
+            <ul class="site-list__nav-block">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <div class="promo">
+        <div class="promo__container">
+          <p class="promo__header">
+            Фотографии пользователей
+          </p>
+        </div>
+      </div>
     </header>
     <main class="inner-page">
       <section class="photos">
         <h2 class="visually-hidden">Фотографии пользователей приложения Пинк</h2>
-        <div class="photos__head">
-          <p class="photos__promo">
-            Фотографии пользователей
+        <div class="photos__title">
+          <p class="photos__description">
+              Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </p>
         </div>
-        <p class="photos__description">
-          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-        </p>
         <div class="photos__top-day">
           <img class="photos__panoramic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня"/>
           <span class="photos__top-rated btn">Панорама дня</span>
@@ -53,17 +70,19 @@
             <p class="photos__comment">
               Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
-            <p class="photos__rating">
+            <div class="photos__rating photos__rating-top">
               <a class="photos__likes-action" href="#">
                 <svg class="photos__heart-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                   <g>
                     <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                   </g>
                 </svg>
-                <span class="photos__like">Нравится:</span>
               </a>
-              <span class="photos__rating-counter">215</span>
-            </p>
+              <div class="photos__rating-info">
+                <span class="photos__like">Нравится:</span>
+                <span class="photos__rating-counter">215</span>
+              </div>
+            </div>
           </blockquote>
         </div>
         <div class="photos__container">
@@ -77,17 +96,19 @@
                   <p class="photos__comment">
                     Вчера он на луну летал, сегодня в руки к нам попал.
                   </p>
-                  <p class="photos__rating">
+                  <div class="photos__rating">
                     <a class="photos__likes-action" href="#">
                       <svg class="photos__heart-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                         <g>
                           <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                         </g>
                       </svg>
-                      <span class="photos__like">Нравится:</span>
                     </a>
-                    <span class="photos__rating-counter">356</span>
-                  </p>
+                    <div class="photos__rating-info">
+                      <span class="photos__like">Нравится:</span>
+                      <span class="photos__rating-counter">356</span>
+                    </div>
+                  </div>
                 </blockquote>
               </li>
               <li class="photos__list">
@@ -98,17 +119,19 @@
                   <p class="photos__comment">
                     Соседи будут рады!
                   </p>
-                  <p class="photos__rating">
+                  <div class="photos__rating">
                     <a class="photos__likes-action" href="#">
                       <svg class="photos__heart-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                         <g>
                           <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                         </g>
                       </svg>
-                      <span class="photos__like">Нравится:</span>
                     </a>
-                    <span class="photos__rating-counter">666</span>
-                  </p>
+                    <div class="photos__rating-info">
+                      <span class="photos__like">Нравится:</span>
+                      <span class="photos__rating-counter">666</span>
+                    </div>
+                  </div>
                 </blockquote>
               </li>
               <li class="photos__list">
@@ -119,17 +142,19 @@
                   <p class="photos__comment">
                     Здесь могла быть ваша цитата о высоком и вечном.
                   </p>
-                  <p class="photos__rating">
+                  <div class="photos__rating">
                     <a class="photos__likes-action" href="#">
                       <svg class="photos__heart-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                         <g>
                           <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                         </g>
                       </svg>
-                      <span class="photos__like">Нравится:</span>
                     </a>
-                    <span class="photos__rating-counter">215</span>
-                  </p>
+                    <div class="photos__rating-info">
+                      <span class="photos__like">Нравится:</span>
+                      <span class="photos__rating-counter">215</span>
+                    </div>
+                  </div>
                 </blockquote>
               </li>
               <li class="photos__list">
@@ -140,17 +165,19 @@
                   <p class="photos__comment">
                     Самая кубанская в мире!
                   </p>
-                  <p class="photos__rating">
+                  <div class="photos__rating">
                     <a class="photos__likes-action" href="#">
                       <svg class="photos__heart-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                         <g>
                           <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                         </g>
                       </svg>
-                      <span class="photos__like">Нравится:</span>
                     </a>
-                    <span class="photos__rating-counter">4</span>
-                  </p>
+                    <div class="photos__rating-info">
+                      <span class="photos__like">Нравится:</span>
+                      <span class="photos__rating-counter">4</span>
+                    </div>
+                  </div>
                 </blockquote>
               </li>
               <li class="photos__list">
@@ -161,17 +188,19 @@
                   <p class="photos__comment">
                     Где снег-то?
                   </p>
-                  <p class="photos__rating">
+                  <div class="photos__rating">
                     <a class="photos__likes-action" href="#">
                       <svg class="photos__heart-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                         <g>
                           <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                         </g>
                       </svg>
-                      <span class="photos__like">Нравится:</span>
                     </a>
-                    <span class="photos__rating-counter">150</span>
-                  </p>
+                    <div class="photos__rating-info">
+                      <span class="photos__like">Нравится:</span>
+                      <span class="photos__rating-counter">150</span>
+                    </div>
+                  </div>
                 </blockquote>
               </li>
               <li class="photos__list">
@@ -182,17 +211,19 @@
                   <p class="photos__comment">
                     Всем GM и взаимные лайки!
                   </p>
-                  <p class="photos__rating">
+                  <div class="photos__rating">
                     <a class="photos__likes-action" href="#">
                       <svg class="photos__heart-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                         <g>
                           <path fill="#d22856" d="M528.174,485.055c-0.212,0-0.412-0.091-0.552-0.249c-3.798-4.324-4.644-5.298-4.858-5.572l-0.004,0.0 c-0.529-0.675-0.821-1.518-0.821-2.373c0-2.095,1.704-3.799,3.799-3.799c0.934,0,1.804,0.32,2.484,0.898 c0.696-0.578,1.56-0.898,2.463-0.898c2.095,0,3.799,1.704,3.799,3.799c0,0.909-0.318,1.754-0.896,2.381l-4.86,5.561 C528.587,484.964,528.386,485.055,528.174,485.055L528.174,485.055z M523.929,478.349c0.208,0.255,2.471,2.839,4.243,4.858 l4.323-4.944c0.34-0.369,0.52-0.86,0.52-1.399c0-1.285-1.045-2.331-2.33-2.331c-0.729,0-1.421,0.344-1.9,0.943 c-0.142,0.178-0.353,0.267-0.585,0.275c-0.227-0.003-0.439-0.111-0.575-0.294c-0.441-0.587-1.129-0.925-1.887-0.925 c-1.285,0-2.33,1.046-2.33,2.331c0,0.678,0.275,1.171,0.507,1.467C523.919,478.336,523.925,478.342,523.929,478.349z"/>
                         </g>
                       </svg>
-                      <span class="photos__like">Нравится:</span>
                     </a>
-                    <span class="photos__rating-counter">2560</span>
-                  </p>
+                    <div class="photos__rating-info">
+                      <span class="photos__like">Нравится:</span>
+                      <span class="photos__rating-counter">2560</span>
+                    </div>
+                  </div>
                 </blockquote>
               </li>
             </ul>
@@ -202,21 +233,20 @@
       <section class="post-photo">
         <h2 class="visually-hidden">Фоторедактор Пинк</h2>
         <div class="post-photo__header">
-          <p class="post-photo__title">Затмите их всех!
-            Выкладывайте все, что накопилось в телефоне!
-          </p>
+          <p class="post-photo__title">Затмите их всех!</p>
+          <p class="post-photo__description">Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <div class="post-photo__container">
           <div class="post-photo__download">
-            <p class="post-photo__picture">
+            <div class="post-photo__picture">
               <img class="post-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Тут будет ваше фото">
-            </p>
+            </div>
             <div class="post-photo__settings">
-              <p class="post-photo__options settings-btn">
+              <div class="post-photo__options settings-btn">
                 <button class="settings-btn__item settings-button-clip">Обрезать фото</button>
                 <button class="settings-btn__item settings-button-filter">Фильтр</button>
                 <button class="settings-btn__item settings-button-exposition">Экспозиция</button>
-              </p>
+              </div>
               <div class="post-photo__range-control">
                 <div class="post-photo__scale">
                   <div class="post-photo__bar"></div>
@@ -230,10 +260,10 @@
         </div>
       </section>
     </main>
-    <footer class="inner-footer">
-      <div class="inner-footer__wrapper">
-        <a class="inner-footer__logo">
-          <svg class="inner-footer__logo-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__logo">
+          <svg class="footer__logo-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g>
               <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
               <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -244,7 +274,7 @@
             <path fill="#D22856" d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531s-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"/>
           </svg>
         </a>
-        <div class="inner-footer__social social">
+        <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--tw" href="https://twiter.com/htmlacademy">
@@ -276,7 +306,7 @@
             </li>
           </ul>
         </div>
-        <div class="inner-footer__copyright copyright">
+        <div class="footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
@@ -287,5 +317,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

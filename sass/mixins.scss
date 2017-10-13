@@ -8,6 +8,11 @@
   font-weight: 300;
 }
 
+@mixin small-bold {
+  font-size: 14px;
+  font-weight: 700;
+}
+
 @mixin font-small {
   font-size: 14px;
   font-weight: 400;
@@ -24,6 +29,12 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+}
+
+@mixin font-medium-line {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 @mixin font-large {

@@ -1,20 +1,15 @@
-.inner-footer {
+.footer {
   width: 100%;
   margin: 0 auto;
   background-color: $white;
-  display: none;
   min-height: 256px;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    min-height: 100px;
   }
 }
 
-.inner-footer__general {
-  display: block;
-}
-
-.inner-footer__wrapper {
+.footer__wrapper {
   margin: 0 auto;
   width: 280px;
   margin-top: 28px;
@@ -26,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
-    min-height: 128px;
+    min-height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,7 +34,7 @@
   }
 }
 
-.inner-footer__logo-image {
+.footer__logo-image {
   &:hover {
     path {
       fill: $pink;
@@ -55,8 +50,9 @@
   }
 }
 
-.inner-footer__social {
+.footer__social {
   @media (min-width: $tablet-width) {
-    min-width: 180px;
+    margin-top: 10px;
+    min-width: 210px;
   }
 }
