@@ -142,6 +142,10 @@
   .advantages__friends::after {
     left: -250px;
   }
+
+  .advantages__wrap {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -202,5 +206,9 @@
 
   .advantages__friends::after {
     display: none;
+  }
+
+  .advantages__wrap {
+    display: inline;
   }
 }

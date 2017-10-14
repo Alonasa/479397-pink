@@ -29,7 +29,7 @@
 .photos__panoramic {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: -30px;
+  margin-bottom: -6px;
 
   @media (min-width: $tablet-width) {
     @include font-medium;
@@ -41,28 +41,32 @@
   }
 }
 
+.photos__top-day {
+  position: relative;
+}
+
 .photos__top-rated {
   @include zero;
   font-size: 12px;
   padding: 6px 21px;
-  font-weight: $big;
+  font-weight: $fw-bold;
   line-height: $s-med;
   text-transform: $big;
   color: $white;
   background-color: $pink;
-  position: relative;
-  top: -113px;
+  position: absolute;
+  top: 0;
   left: 160px;
   margin-bottom: -143px;
 
   @media (min-width: $tablet-width) {
-    top: -428px;
+    top: 57px;
     left: 500px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -428px;
-    left: 930px;
+    top: 54px;
+    left: 810px;
   }
 }
 
@@ -98,6 +102,11 @@
   @media (min-width: $desktop-width) {
     width: 940px;
     min-height: 1164px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
   }
 }
 

@@ -1,6 +1,7 @@
 .app {
   @include zero;
   color: $white;
+  width: 100%;
 }
 
 .app__title {
@@ -33,7 +34,6 @@
 .app__container {
   min-width: 280px;
   min-height: 242px;
-  padding: 0 20px;
   padding-top: 29px;
   background-color: #1d2631;
 }
@@ -49,9 +49,8 @@
 }
 
 .app__links {
+  @include zero;
   width: 207px;
-  padding: 0;
-  margin: 0;
   list-style: $list;
   display: flex;
   flex-direction: row;
@@ -64,8 +63,8 @@
 }
 
 .app__accessibility {
-  padding: 0;
-  margin: 0;
+  @include zero;
+  width: 240px;
   line-height: $s-med;
   font-size: $s-xsmall;
   font-weight: $fw-small;
@@ -75,7 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .app {
-    min-height: 728px;
+    min-height: 727px;
   }
 
   .app__photo {
@@ -120,8 +119,9 @@
   }
 
   .app__link-main {
-    width: 224px;
+    width: 256px;
     margin-top: 20px;
+    font-size: 20px;
   }
 
   .app__links {
@@ -133,6 +133,7 @@
   }
 
   .app__accessibility {
+    width: 300px;
     font-size: $s-small;
     line-height: $s-med;
     letter-spacing: -0.5px;
@@ -168,5 +169,13 @@
     font-weight: $fw-small;
     line-height: 60px;
     letter-spacing: -1.7px;
+  }
+
+  .app__link-main {
+    width: 254px;
+  }
+
+  .app__accessibility {
+    width: 300px;
   }
 }

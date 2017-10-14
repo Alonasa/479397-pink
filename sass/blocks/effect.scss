@@ -43,8 +43,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 572px;
-    min-height: 100px;
+    width: 574px;
+    min-height: 254px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -63,7 +63,34 @@
     font-size: 30px;
     font-weight: $fw-bold;
     width: 450px;
-    min-height: 60px;
+    min-height: 47px;
+    letter-spacing: 0.6px;
+  }
+}
+
+.effect__title-inside {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.effect__description-aside {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.effect__description-inside {
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -76,6 +103,7 @@
 
   @media (min-width: $desktop-width) {
     @include font-medium;
+    margin-bottom: 22px;
     width: 540px;
     min-height: 50px;
   }

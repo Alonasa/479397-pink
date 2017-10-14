@@ -12,6 +12,21 @@
 .btn__download-app {
   color: $white;
   border: 3px solid #ffffff;
+  width: 235px;
   border-radius: 25px;
-  padding: 14px 37px;
+  padding: 14px 20px;
+
+  @media (min-width: $tablet-width) {
+    vertical-align: middle;
+    width: 230px;
+    padding: 14px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    vertical-align: middle;
+    width: 278px;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 21px;
+  }
 }

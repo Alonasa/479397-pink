@@ -1,6 +1,7 @@
 .page-header {
   @include zero;
   min-height: 100px;
+  margin: 0 auto;
 }
 
 @media (min-width: $desktop-width) {

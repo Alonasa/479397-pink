@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 200px;
+  }
 }
 
 .inner-footer__general {
