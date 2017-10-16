@@ -1,13 +1,32 @@
 .social__list {
   @include zero;
+  margin-bottom: 39px;
   list-style: $list;
+  width: 178px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    margin-bottom: 0;
+    margin-right: 22px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    margin: 5px 0 0 12px;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .social__item {
   text-align: center;
   vertical-align: middle;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   border: 3px solid #e9ebec;
   display: inline-block;

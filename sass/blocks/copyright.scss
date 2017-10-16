@@ -1,4 +1,6 @@
 .copyright {
+  display: flex;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: flex-end;
@@ -7,12 +9,30 @@
 
 .copyright__text {
   @include font-middle;
+  padding-right: 14px;
+  align-self: center;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     padding-right: 14px;
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
     @include font-medium-line;
+    margin-bottom: 18px;
+  }
+}
+
+.copyright__link {
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-medium-line;
+    margin-top: 0;
+    margin-bottom: 5px;
   }
 }

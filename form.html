@@ -71,20 +71,20 @@
                   <!-- <legend class="competition__member-placeholders visually-hidden">Введите данные о себе</legend> -->
                   <div class="competition__form-item">
                     <p class="competition__input-info">
-                      <label class="competition__label" for="competition__last-name">Фамилия:</label>
-                      <input class="competition__input" type="text" name="last-name" id="competition__last-name" placeholder="Укажите фамилию *">
+                      <label class="competition__label competition__contact-data" for="competition__last-name">Фамилия:</label>
+                      <input class="competition__input competition__input1" type="text" name="last-name" id="competition__last-name" placeholder="Укажите фамилию *">
                     </p>
                   </div>
                   <div class="competition__form-item">
                     <p class="competition__input-info">
-                      <label class="competition__label" for="competition__first-name">Имя:</label>
-                      <input class="competition__input" type="text" name="first-name" id="competition__first-name" placeholder="Введите ваше имя *">
+                      <label class="competition__label competition__contact-data" for="competition__first-name">Имя:</label>
+                      <input class="competition__input competition__input2" type="text" name="first-name" id="competition__first-name" placeholder="Введите ваше имя *">
                     </p>
                   </div>
                   <div class="competition__form-item">
                     <p class="competition__input-info">
-                      <label class="competition__label" for="competition__middle-name">Отчество:</label>
-                      <input class="competition__input" type="text" name="middle-name" id="competition__middle-name" placeholder="Ну и отчество тоже">
+                      <label class="competition__label competition__contact-data" for="competition__middle-name">Отчество:</label>
+                      <input class="competition__input competition__input3" type="text" name="middle-name" id="competition__middle-name" placeholder="Ну и отчество тоже">
                     </p>
                   </div>
                 </div>
@@ -122,7 +122,7 @@
               </div>
               <div class="competition__contacts-container">
                 <fieldset class="competition__personal-contacts">
-                  <legend class="competition__contact-label" align="center">Контактная информация</legend>
+                  <legend class="competition__contact-legend" align="center">Контактная информация</legend>
                   <div class="competition__wrap-1">
                     <p class="competition__input-field">
                       <label class="competition__label" for="competition__phone">Номер телефона</label>
@@ -137,7 +137,7 @@
               </div>
               <div class="competition__app-container">
                 <fieldset class="competition__app">
-                  <legend class="competition__app-label" align="center">С каким приложением путешествовали?</legend>
+                  <legend class="competition__app-legend" align="center">С каким приложением путешествовали?</legend>
                   <ul class="competition__app-list">
                     <li class="competition__app-item">
                       <input class="visually-hidden" type="radio" name="competition__ios" id="competition__ios" checked>
@@ -156,14 +156,14 @@
               </div>
               <div class="competition__emotions-container">
                 <fieldset class="competition__emotions-input">
-                  <legend class="competition__legend" align="center">Опишите свои эмоции</legend>
+                  <legend class="competition__emotions-legend" align="center">Опишите свои эмоции</legend>
                   <textarea class="competition__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                 </fieldset>
               </div>
               <div class="competition__sender">
                 <div class="competition__sender-container">
                   <button class="button  button__modal competition__button competition__modal-button" type="submit">Отправить форму</button>
-                  <p class="competition__requiered"><span class="competition__star-marker">*</span> — Обязательные поля</p>
+                  <p class="competition__requiered"><span class="competition__star-marker">*</span> — Обязательные <span class="competition__requiered-hide">для заполнения</span> поля</p>
                 </div>
               </div>
             </form>
