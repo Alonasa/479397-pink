@@ -14,6 +14,11 @@
     margin-bottom: 19px;
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .settings-btn__item:nth-of-type(3) {
@@ -41,6 +46,12 @@
     top: 47px;
     left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    top: 58px;
+    left: 0;
+  }
 }
 
 .settings-btn__item:nth-of-type(2)::after,
@@ -52,6 +63,13 @@
   }
 }
 
+.settings-btn__item:nth-of-type(3)::after {
+  @media (min-width: $desktop-width) {
+    left: -5px;
+    top: 52px;
+  }
+}
+
 .settings-btn__filter {
   fill: rgba(40, 54, 69, 0.3);
 
@@ -59,12 +77,23 @@
     width: 25px;
     height: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 48px;
+    fill: $pink;
+  }
 }
 
 .settings-btn__filter-exposition {
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 33px;
+    height: 33px;
   }
 }
 
