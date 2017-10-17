@@ -7,6 +7,14 @@
 
 .photos__title {
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 88px;
+  }
 }
 
 .photos__description {
@@ -116,7 +124,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    // min-height: 555px;
+    margin-bottom: 54px;
   }
 }
 
@@ -170,11 +178,11 @@
   @include zero;
 
   @media (min-width: $tablet-width) {
-    // min-height: 48px;
+    min-height: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    // min-height: 48px;
+    min-height: 48px;
   }
 }
 
@@ -195,13 +203,14 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 12px 0 24px;
+    align-content: flex-end;
+    padding: 12px 0 27px;
   }
 
   @media (min-width: $desktop-width) {
     width: 240px;
     height: 20px;
-    padding-top: 9px;
+    padding-top: 12px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -221,7 +230,7 @@
 
     @media (min-width: $desktop-width) {
       width: 118px;
-      top: 15px;
+      top: 11px;
       padding-left: 16px;
     }
   }

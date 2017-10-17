@@ -21,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-medium;
-    padding-bottom: 21px;
+    padding-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,14 +53,22 @@
 .post-photo__options {
   margin: 0 auto;
   margin-bottom: 23px;
-  width: 222px;
-  display: flex;
-  justify-content: space-between;
+  width: 280px;
+  // display: flex;
+  // justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    @include zero;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -193px;
+  }
 }
 
 .post-photo__download {
   @media (min-width: $tablet-width) {
     width: 620px;
+    margin-top: 57px;
     display: flex;
     justify-content: space-between;
   }
@@ -87,7 +95,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 58px;
+    padding-top: 5px;
   }
 }
 
@@ -112,11 +120,15 @@
 }
 
 .post-photo__settings {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
   @media (min-width: $tablet-width) {
     width: 275px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -138,6 +150,12 @@
   padding: 12px 26px;
   border-radius: 26px;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    margin-bottom: 24.5px;
+    margin-left: 2px;
+  }
 }
 
 .post-photo__button--post {
@@ -175,12 +193,17 @@
   margin: 0 auto;
   position: relative;
   cursor: pointer;
-  width: 240px;
   height: 0;
-  top: 5px;
+  top: 28px;
   left: -2px;
   border-bottom: solid 2px $main-blue;
-  margin-bottom: 39px;
+  margin-bottom: 78px;
+  width: 240px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 202px;
+  }
 }
 
 .post-photo__scale {
@@ -196,14 +219,100 @@
   }
 }
 
+.post-photo__scale--clip {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -6px;
+    right: 42px;
+  }
+}
+
+.post-photo__scale--filter {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -6px;
+    right: 163px;
+  }
+}
+
+.post-photo__scale--exposition {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -6px;
+    right: 92px;
+  }
+}
+
 .post-photo__range-control:nth-of-type(2),
 .post-photo__range-control:nth-of-type(3) {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
-.post-photo__divider {
-  height: 1px;
-  color: #dddfe0;
-  border: none;
-  background-color: #dddfe0;
+.post-photo__filter:nth-of-type(1) {
+  left: 28px;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    left: 0;
+    top: -19px;
+  }
 }
+
+.post-photo__range-control:nth-of-type(1) {
+  @media (min-width: $tablet-width) {
+    order: 1;
+    top: -55px;
+    left: 16px;
+  }
+}
+
+.post-photo__filter:nth-of-type(2) {
+  left: 44px;
+  top: 2px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    top: -100px;
+    left: 0;
+  }
+}
+
+.post-photo__range-control:nth-of-type(2) {
+  @media (min-width: $tablet-width) {
+    order: 3;
+    top: -136px;
+    left: 16px;
+  }
+}
+
+.post-photo__filter:nth-of-type(3) {
+  left: 60px;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+    top: -184px;
+    left: 1px;
+  }
+}
+
+.post-photo__range-control:nth-of-type(3) {
+  @media (min-width: $tablet-width) {
+    order: 5;
+    top: -217px;
+    left: 16px;
+  }
+}
+
+// .post-photo__divider {
+//   height: 1px;
+//   color: #dddfe0;
+//   border: none;
+//   background-color: #dddfe0;
+//
+//   @media (min-width: $tablet-width) {
+//     display: none
+// }
