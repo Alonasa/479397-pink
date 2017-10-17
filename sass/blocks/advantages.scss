@@ -17,9 +17,9 @@
   font-weight: $fw-small;
   font-size: $s-med;
   text-align: center;
-  width: 280px;
   margin: 0 auto;
-  height: 244px;
+  width: 100%;
+  min-height: 244px;
   background: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,8 +29,10 @@
   font-weight: $fw-small;
   font-size: $s-med;
   line-height: 30px;
-  padding-top: 19px;
+  padding-top: 40px;
   width: 240px;
+  margin: 0 auto;
+  margin-bottom: 23px;
 }
 
 .advantages__offer {
@@ -38,6 +40,8 @@
   padding-top: 5px;
   line-height: 28px;
   width: 240px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .advantages__list {
@@ -101,23 +105,26 @@
   }
 
   .advantages__head {
-    min-width: $tablet-width;
-    min-height: 292px;
-    width: 620px;
     margin: 0 auto;
+    width: 100%;
+    min-height: 292px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .advantages__question {
     @include zero;
+    margin: 0 auto;
+    width: 614px;
     padding-top: 58px;
     font-size: 40px;
   }
 
   .advantages__offer {
     @include zero;
+    margin: 0 auto;
     font-size: 40px;
     line-height: 48px;
     padding-top: 10px;
@@ -170,9 +177,11 @@
     font-size: 50px;
     padding-top: 37px;
     letter-spacing: -1px;
+    width: 800px;
   }
 
   .advantages__offer {
+    margin: 0 auto;
     font-size: 50px;
     line-height: 60px;
     width: 440px;
@@ -181,9 +190,9 @@
   }
 
   .advantages__head {
-    min-height: 373px;
-    width: 940px;
     margin: 0 auto;
+    min-height: 373px;
+    width: 100%;
   }
 
   .advantages__wrapper {

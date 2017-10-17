@@ -36,7 +36,6 @@
 .effect__block {
   @media (min-width: $tablet-width) {
     width: 311px;
-    min-height: 308px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -44,7 +43,6 @@
 
   @media (min-width: $desktop-width) {
     width: 574px;
-    min-height: 254px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -58,8 +56,10 @@
   font-weight: $fw-bold;
   line-height: 36px;
   color: $black;
+  margin-top: 96px;
 
   @media (min-width: $desktop-width) {
+    margin-top: 46px;
     font-size: 30px;
     font-weight: $fw-bold;
     width: 450px;

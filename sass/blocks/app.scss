@@ -42,6 +42,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 25px;
 }
 
 .app__link-main {
@@ -56,6 +57,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .app__link {
