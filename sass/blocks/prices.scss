@@ -1,7 +1,6 @@
 .prices {
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 97px;
   line-height: 30px;
   background-color: $main-pink;
 
@@ -16,10 +15,12 @@
 
 .prices__wrapper {
   width: 320px;
+  padding-bottom: 97px;
   margin: auto;
   overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     width: 620px;
   }
 
@@ -128,5 +129,82 @@
     @include font-medium;
     text-transform: none;
     padding: 13px 0 15px 20px;
+  }
+}
+
+
+.prices__controls {
+  @include zero;
+}
+
+.prices__controls input[type="radio"] {
+  @include zero;
+  opacity: 0;
+}
+
+.prices__slider-control {
+  position: relative;
+  top: 296px;
+  margin-bottom: -54px;
+  left: 50%;
+  width: 240px;
+  height: 24px;
+  margin-left: -120px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.prices__slider-control label {
+  display: inline-block;
+  vertical-align: top;
+  width: 6px;
+  height: 6px;
+  margin: 0 7px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prices__slider-control label:hover {
+  background-color: rgba(40, 54, 69, 0.6);
+}
+
+.prices__input-1:checked ~ .prices__slider-control label[for="prices__min"],
+.prices__input-2:checked ~ .prices__slider-control label[for="prices__standart"],
+.prices__input-3:checked ~ .prices__slider-control label[for="prices__max"] {
+  width: 7px;
+  height: 7px;
+  margin: 0 3px;
+  background-color: $clear;
+  border: 3px solid $main-blue;
+  border-radius: 50%;
+  position: relative;
+  bottom: 4px;
+}
+
+.prices__input-1:checked ~ .prices__list {
+  transform: translateX(-258px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(0);
+  }
+}
+
+.prices__input-2:checked ~ .prices__list {
+  transform: translateX(-536px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(0);
+  }
+}
+
+.prices__input-3:checked ~ .prices__list {
+  transform: translateX(-815px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(0);
   }
 }
