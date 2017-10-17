@@ -1,14 +1,12 @@
 .post-photo {
   background-color: $main-pink;
-  min-height: 910px;
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
-    min-height: 511px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,11 +17,11 @@
 .post-photo__header {
   @include font-small;
   background-color: $white;
-  min-height: 153px;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     @include font-medium;
-    min-height: 192px;
+    padding-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,7 +37,6 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
     width: 620px;
-    min-height: 511px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,10 +50,17 @@
   }
 }
 
+.post-photo__options {
+  margin: 0 auto;
+  margin-bottom: 23px;
+  width: 222px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .post-photo__download {
   @media (min-width: $tablet-width) {
     width: 620px;
-    min-height: 400px;
     display: flex;
     justify-content: space-between;
   }
@@ -71,14 +75,15 @@
 
 .post-photo__title {
   @include zero;
-  padding: 20px 20px 0;
+  padding: 21px 20px 0;
   text-align: center;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     @include zero;
     width: 430px;
     margin: 0 auto;
-    padding-top: 63px;
+    padding-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,12 +97,12 @@
 }
 
 .post-photo__picture {
-  padding-top: 17px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     @include zero;
     width: 300px;
-    min-height: 400px;
+    height: 400px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,7 +114,6 @@
 .post-photo__settings {
   @media (min-width: $tablet-width) {
     width: 275px;
-    min-height: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -121,12 +125,19 @@
   }
 }
 
+.post-photo__buttons {
+  margin-top: 38px;
+}
+
 .post-photo__button {
   @include button-zero;
-  width: 280px;
-  padding: 15px 40px;
+  font-size: $s-small;
+  font-weight: $fw-bold;
+  line-height: 25px;
+  width: 278px;
+  padding: 12px 26px;
   border-radius: 26px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .post-photo__button--post {
@@ -158,4 +169,41 @@
 .post-photo__button--disabled:active {
   background-color: #283645;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.post-photo__range-control {
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  width: 240px;
+  height: 0;
+  top: 5px;
+  left: -2px;
+  border-bottom: solid 2px $main-blue;
+  margin-bottom: 39px;
+}
+
+.post-photo__scale {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: -6px;
+  right: 33px;
+  background-color: $main-pink;
+
+  path {
+    fill: $pink;
+  }
+}
+
+.post-photo__range-control:nth-of-type(2),
+.post-photo__range-control:nth-of-type(3) {
+  display: none;
+}
+
+.post-photo__divider {
+  height: 1px;
+  color: #dddfe0;
+  border: none;
+  background-color: #dddfe0;
 }

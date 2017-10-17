@@ -1,0 +1,19 @@
+.settings-btn__item {
+  width: 60px;
+  height: 60px;
+  border: none;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.settings-btn__filter {
+  fill: rgba(40, 54, 69, 0.3);
+}
+
+.settings-btn__filter-current {
+  fill: $pink;
+}
+
+.settings-btn__filter:hover {
+  fill: rgba(40, 54, 69, 0.5);
+}
