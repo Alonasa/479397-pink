@@ -30,3 +30,12 @@
     font-size: 21px;
   }
 }
+
+.btn__download-app:hover {
+  color: $pink;
+  background-color: $main-pink;
+}
+
+.btn__download-app:active {
+  color: rgba(210, 40, 86, 0.3);
+}

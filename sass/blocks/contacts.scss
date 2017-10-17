@@ -147,3 +147,12 @@
   font-weight: $fw-small;
   line-height: 30px;
 }
+
+
+.contacts__e-mail:hover {
+  color: $main-blue;
+}
+
+.contacts__e-mail:active {
+  color: rgba(40, 54, 69, 0.3);
+}
