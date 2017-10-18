@@ -122,6 +122,19 @@
   }
 }
 
+.post-photo__image {
+  @media (min-width: $tablet-width) {
+    @include zero;
+    width: 300px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
+}
+
 .post-photo__settings {
   width: 280px;
   display: flex;
