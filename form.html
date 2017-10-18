@@ -71,27 +71,27 @@
                   <!-- <legend class="competition__member-placeholders visually-hidden">Введите данные о себе</legend> -->
                   <div class="competition__form-item">
                     <p class="competition__input-info">
-                      <label class="competition__label" for="competition__last-name">Фамилия:</label>
-                      <input class="competition__input" type="text" name="last-name" id="competition__last-name" placeholder="Укажите фамилию *">
+                      <label class="competition__label competition__contact-data" for="competition__last-name">Фамилия:</label>
+                      <input class="competition__input competition__input1" type="text" name="last-name" id="competition__last-name" placeholder="Укажите фамилию *">
                     </p>
                   </div>
                   <div class="competition__form-item">
                     <p class="competition__input-info">
-                      <label class="competition__label" for="competition__first-name">Имя:</label>
-                      <input class="competition__input" type="text" name="first-name" id="competition__first-name" placeholder="Введите ваше имя *">
+                      <label class="competition__label competition__contact-data" for="competition__first-name">Имя:</label>
+                      <input class="competition__input competition__input2" type="text" name="first-name" id="competition__first-name" placeholder="Введите ваше имя *">
                     </p>
                   </div>
                   <div class="competition__form-item">
                     <p class="competition__input-info">
-                      <label class="competition__label" for="competition__middle-name">Отчество:</label>
-                      <input class="competition__input" type="text" name="middle-name" id="competition__middle-name" placeholder="Ну и отчество тоже">
+                      <label class="competition__label competition__contact-data" for="competition__middle-name">Отчество:</label>
+                      <input class="competition__input competition__input3" type="text" name="middle-name" id="competition__middle-name" placeholder="Ну и отчество тоже">
                     </p>
                   </div>
                 </div>
               </div>
               <div class="competition__goals-container">
                 <fieldset class="competition__goals">
-                  <legend class="competition__personal-goals">Ваши безбашенные достижения в путешествии</legend>
+                  <legend class="competition__personal-goals" align="center">Ваши безбашенные достижения в путешествии</legend>
                   <ul class="competition__list-checkbox">
                     <li class="competition__list-option">
                       <input class="visually-hidden" type="checkbox" name="selfie-with-fish" id="selfie-with-fish" checked>
@@ -122,7 +122,7 @@
               </div>
               <div class="competition__contacts-container">
                 <fieldset class="competition__personal-contacts">
-                  <legend class="competition__contact-label">Контактная информация</legend>
+                  <legend class="competition__contact-legend" align="center">Контактная информация</legend>
                   <div class="competition__wrap-1">
                     <p class="competition__input-field">
                       <label class="competition__label" for="competition__phone">Номер телефона</label>
@@ -137,7 +137,7 @@
               </div>
               <div class="competition__app-container">
                 <fieldset class="competition__app">
-                  <legend class="competition__legend">С каким приложением путешествовали?</legend>
+                  <legend class="competition__app-legend" align="center">С каким приложением путешествовали?</legend>
                   <ul class="competition__app-list">
                     <li class="competition__app-item">
                       <input class="visually-hidden" type="radio" name="competition__ios" id="competition__ios" checked>
@@ -156,14 +156,14 @@
               </div>
               <div class="competition__emotions-container">
                 <fieldset class="competition__emotions-input">
-                  <legend class="competition__legend">Опишите свои эмоции</legend>
+                  <legend class="competition__emotions-legend" align="center">Опишите свои эмоции</legend>
                   <textarea class="competition__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                 </fieldset>
               </div>
               <div class="competition__sender">
                 <div class="competition__sender-container">
                   <button class="button  button__modal competition__button competition__modal-button" type="submit">Отправить форму</button>
-                  <p class="competition__requiered"><span class="competition__star-marker">*</span> — Обязательные поля</p>
+                  <p class="competition__requiered"><span class="competition__star-marker">*</span> — Обязательные <span class="competition__requiered-hide">для заполнения</span> поля</p>
                 </div>
               </div>
             </form>
@@ -191,7 +191,7 @@
     </main>
     <footer class="footer-form">
       <div class="footer-form__wrapper">
-        <a class="footer-form__logo">
+        <a class="footer-form__logo" href="index.html">
           <svg class="footer-form__logo-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g>
               <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>

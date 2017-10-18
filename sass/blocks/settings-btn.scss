@@ -1,0 +1,106 @@
+.settings-btn__item {
+  width: 60px;
+  height: 60px;
+  border: none;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    @include zero;
+    width: 28px;
+    height: 28px;
+    margin-top: 27px;
+    margin-bottom: 19px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.settings-btn__item:nth-of-type(3) {
+  @media (min-width: $tablet-width) {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.settings-btn__item::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  background-color: #dddfe0;
+  top: 124px;
+  left: -48px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 275px;
+    height: 1px;
+    background-color: #dddfe0;
+    top: 47px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    top: 58px;
+    left: 0;
+  }
+}
+
+.settings-btn__item:nth-of-type(2)::after,
+.settings-btn__item:nth-of-type(3)::after {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.settings-btn__item:nth-of-type(3)::after {
+  @media (min-width: $desktop-width) {
+    left: -5px;
+    top: 52px;
+  }
+}
+
+.settings-btn__filter {
+  fill: rgba(40, 54, 69, 0.3);
+
+  @media (min-width: $tablet-width) {
+    width: 25px;
+    height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 48px;
+    fill: $pink;
+  }
+}
+
+.settings-btn__filter-exposition {
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.settings-btn__filter-current {
+  fill: $pink;
+}
+
+.settings-btn__filter:hover {
+  fill: rgba(40, 54, 69, 0.5);
+}

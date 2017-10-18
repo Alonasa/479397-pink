@@ -18,9 +18,10 @@
   }
 }
 
+
 .contacts__container {
   text-align: center;
-  background-color: $white;
+  background: $white;
 }
 
 .contacts__wrapper {
@@ -53,7 +54,7 @@
 .contacts__list {
   @include zero;
   list-style: $list;
-  min-height: 260px;
+  min-height: 264px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -80,6 +81,7 @@
 
 .contacts__action-ask {
   min-height: 30px;
+  width: 240px;
   font-size: $s-med;
   font-weight: $fw-small;
   line-height: 30px;
@@ -108,6 +110,7 @@
   color: $black;
   font-size: $s-small;
   font-weight: $fw-bold;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 4px;
@@ -143,4 +146,13 @@
   font-size: $s-med;
   font-weight: $fw-small;
   line-height: 30px;
+}
+
+
+.contacts__e-mail:hover {
+  color: $main-blue;
+}
+
+.contacts__e-mail:active {
+  color: rgba(40, 54, 69, 0.3);
 }

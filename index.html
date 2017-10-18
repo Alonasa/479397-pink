@@ -83,10 +83,12 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
         <div class="advantages__head">
-          <h2 class="advantages__question">Устали от серости мегаполиса?</h2>
-          <p class="advantages__offer">
-            Нам есть, что вам предложить!
-          </p>
+          <div class="advantages__head-container">
+            <h2 class="advantages__question">Устали от серости мегаполиса?</h2>
+            <p class="advantages__offer">
+              Нам есть, что вам предложить!
+            </p>
+          </div>
         </div>
         <div class="advantages__container">
           <ul class="advantages__list advantages__wrapper">
@@ -99,7 +101,7 @@
             <li class="advantages__item advantages__photo-decoration">
               <h3 class="advantages__title advantages__change">Меняет мир вокруг</h3>
               <p class="advantages__description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <span class="advantages__wrap">усилить эффект</span>
               </p>
             </li>
             <li class="advantages__item advantages__friends">
@@ -114,12 +116,12 @@
       <section class="effect">
         <div class="effect__wrapper">
           <div class="effect__block">
-            <h2 class="effect__title">Эффект на 24 часа!</h2>
+            <h2 class="effect__title">Эффект <span class="effect__title-inside">на 24 часа!</span></h2>
             <p class="effect__description">
-              Британские ученые провели исследования
-              и доказали, что положительный эффект
-              от использования приложения длится
-              целые сутки!
+              <span class="effect__description-inside">Британские ученые провели исследования
+              и доказали,</span> что положительный эффект
+              <span class="effect__description-aside">от использования приложения длится
+              целые сутки!</span>
             </p>
             <a class="effect__link" href="explore.html">Узнать больше об исследовании</a>
           </div>
@@ -178,51 +180,51 @@
       <section class="prices">
         <h2 class="visually-hidden">Тарифы приложения Пинк</h2>
         <div class="prices__wrapper">
-          <table class="prices__list">
-            <tr class="prices__item">
-              <td class="prices__header prices__header--empty">
-              </td>
-              <td class="prices__header">
-                <b class="prices__title">База</b>
-                <p class="prices__rate">1,99 USD</p>
-              </td>
-              <td class="prices__header">
-                <b class="prices__title">Стандарт</b>
-                <p class="prices__rate">3,99 USD</p>
-              </td>
-              <td class="prices__header">
-                <b class="prices__title">Анлим</b>
-                <p class="prices__rate">9,99 USD</p>
-              </td>
-            </tr>
-            <tr class="prices__item">
-              <td class="prices__value prices__pink-filter">Розовый фильтр</td>
-              <td class="prices__value prices__pink-filter">Розовый фильтр</td>
-              <td class="prices__value prices__pink-filter">Розовый фильтр</td>
-              <td class="prices__value prices__pink-filter">Розовый фильтр</td>
-            </tr>
-            <tr class="prices__item">
-              <td class="prices__value prices__smile">Смайлики</td>
-              <td class="prices__value prices__smile">Смайлики</td>
-              <td class="prices__value prices__smile">Смайлики</td>
-              <td class="prices__value prices__smile">Смайлики</td>
-            </tr>
-            <tr class="prices__item">
-              <td class="prices__value prices__comment">Комментарии</td>
-              <td class="prices__value prices__comment">Комментарии</td>
-              <td class="prices__value prices__comment">Комментарии</td>
-              <td class="prices__value prices__comment">Комментарии</td>
-            </tr>
-          </table>
           <div class="prices__controls">
-            <input class="visually-hidden prices__input prices__input-min" type="radio" name="prices-toggler" id="prices__min">
-            <input class="visually-hidden prices__input prices__input-standart" type="radio" name="prices-toggler" id="prices__standart" checked>
-            <input class="visually-hidden prices__input prices__input-max" type="radio" name="prices-toggler" id="prices__max">
+            <input class="prices__input prices__input-min prices__input-1" type="radio" name="prices" id="prices__min">
+            <input class="prices__input prices__input-standart prices__input-2" type="radio" name="prices" id="prices__standart" checked>
+            <input class="prices__input prices__input-max prices__input-3" type="radio" name="prices" id="prices__max">
             <div class="prices__slider-control">
               <label class="prices__toggler prices__toggler-min" for="prices__min"></label>
               <label class="prices__toggler prices__toggler-standart" for="prices__standart"></label>
               <label class="prices__toggler prices__toggler-max" for="prices__max"></label>
             </div>
+            <table class="prices__list">
+              <tr class="prices__item">
+                <td class="prices__header prices__header--empty">
+                </td>
+                <td class="prices__header">
+                  <b class="prices__title">База</b>
+                  <p class="prices__rate">1,99 USD</p>
+                </td>
+                <td class="prices__header">
+                  <b class="prices__title">Стандарт</b>
+                  <p class="prices__rate">3,99 USD</p>
+                </td>
+                <td class="prices__header">
+                  <b class="prices__title">Анлим</b>
+                  <p class="prices__rate">9,99 USD</p>
+                </td>
+              </tr>
+              <tr class="prices__item">
+                <td class="prices__value prices__pink-filter">Розовый фильтр</td>
+                <td class="prices__value prices__pink-filter">Розовый фильтр</td>
+                <td class="prices__value prices__pink-filter">Розовый фильтр</td>
+                <td class="prices__value prices__pink-filter">Розовый фильтр</td>
+              </tr>
+              <tr class="prices__item">
+                <td class="prices__value prices__smile">Смайлики</td>
+                <td class="prices__value prices__smile">Смайлики</td>
+                <td class="prices__value prices__smile">Смайлики</td>
+                <td class="prices__value prices__smile">Смайлики</td>
+              </tr>
+              <tr class="prices__item">
+                <td class="prices__value prices__comment">Комментарии</td>
+                <td class="prices__value prices__comment">Комментарии</td>
+                <td class="prices__value prices__comment">Комментарии</td>
+                <td class="prices__value prices__comment">Комментарии</td>
+              </tr>
+            </table>
           </div>
         </div>
       </section>
