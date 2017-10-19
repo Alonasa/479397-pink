@@ -49,10 +49,6 @@
   color: $white;
 }
 
-.site-list__logo-image {
-  width: 76px;
-}
-
 .site-list__logo:hover {
   path {
     fill: $pink;
@@ -186,12 +182,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-list__logo-block {
-    height: 110px;
+  .site-list__logo-image {
+    padding: 5px 0 5px;
   }
 
-  .site-list__logo-image {
-    padding: 26px 0 40px;
+  .site-list__logo {
+    height: 40px;
+    width: 146px;
   }
 
   .site-list__item {
@@ -221,9 +218,9 @@
     background-color: $clear;
   }
 
-  .site-list__logo-block {
-    width: 150px;
-  }
+  // .site-list__logo-block {
+  //   width: 150px;
+  // }
 
   .site-list__nav-block {
     min-width: 620px;
@@ -240,10 +237,15 @@
   }
 
   .site-list__item--logo {
-    padding: 0;
+    @include zero;
+    padding-bottom: 10px;
   }
 
   .site-list__toggle {
     display: none;
+  }
+
+  .site-list__logo-image {
+    padding: 0 0 5px;
   }
 }
