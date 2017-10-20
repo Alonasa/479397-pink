@@ -16,11 +16,15 @@
             <ul class="site-list__logo-block">
               <li class="site-list__item--logo">
                 <a class="site-list__logo">
-                  <picture>
-                    <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-                    <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                    <img class="site-list__logo-image" src="img/logo-pink-white-mobile.svg"  alt="Pink-logo">
-                  </picture>
+                  <svg class="site-list__logo-image site-list__logo-image--desktop" width="146.3" height="40.375">
+                    <use xlink:href="img/logo-sprite.svg#logo-pink-white-desktop"></use>
+                  </svg>
+                  <svg class="header__logo-image site-list__logo-image--tablet" width="146.3" height="40.375">
+                    <use xlink:href="img/log-sprite.svg#logo-pink-white-tablet"></use>
+                  </svg>
+                  <svg class="header__logo-image site-list__logo-image--mobile" width="74.426" height="22.859">
+                    <use xlink:href="img/logo-sprite.svg#logo-pink-white-mobile"></use>
+                  </svg>
                 </a>
                 <button class="site-list__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
               </li>
@@ -243,8 +247,8 @@
                 </a>
               </li>
               <li class="contacts__item contacts__item-3">
-              <p class="contacts__action contacts__guests">Приезжайте в гости:</p>
-              <span class="contacts__adress contacts__method">ул. Большая Конюшенная, 19/8</span>
+                <p class="contacts__action contacts__guests">Приезжайте в гости:</p>
+                <span class="contacts__adress contacts__method">ул. Большая Конюшенная, 19/8</span>
               </li>
             </ul>
           </div>
