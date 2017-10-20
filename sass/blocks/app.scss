@@ -195,12 +195,13 @@
 .app__photo::after {
   content: "";
   position: absolute;
-  width: 280px;
+  width: 100%;
   height: 545px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   left: 0;
   top: 179px;
+  background-position-x: calc((100vw - 322px) / 2);
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -211,12 +212,14 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    width: 670px;
+    width: 100%;
     height: 545px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
-    left: -20px;
-    top: 184px;
+    // left: -20px;
+    top: 185px;
+    background-position-x: calc((100vw - 700px) / 2);
+
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
@@ -228,12 +231,12 @@
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
-    width: 890px;
+    width: 100%;
     height: 645px;
-    left: 27px;
     top: 209px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
+    background-position-x: calc((100vw - 925px) / 2);
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
