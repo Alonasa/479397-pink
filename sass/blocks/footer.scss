@@ -42,17 +42,36 @@
   }
 }
 
-.footer__logo-image {
+.footer__logo-block {
+  fill: #283645;
+
   &:hover {
-    path {
-      fill: $pink;
-    }
+    fill: $pink;
   }
 
   &:active {
     opacity: 0.3;
+    fill: #283645;
   }
+}
 
+.footer__logo-block--mobile {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.footer__logo-block--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.footer__logo-image {
   @media (min-width: $tablet-width) {
     width: 150px;
   }

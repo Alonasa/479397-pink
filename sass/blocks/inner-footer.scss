@@ -43,16 +43,6 @@
 }
 
 .inner-footer__logo-image {
-  &:hover {
-    path {
-      fill: $pink;
-    }
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     width: 150px;
   }

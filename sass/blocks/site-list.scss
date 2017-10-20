@@ -9,6 +9,18 @@
   flex-wrap: wrap;
 }
 
+.site-list__logo-image {
+  fill: #ffffff;
+}
+
+.site-list__logo-image:hover {
+  fill: $pink;
+}
+
+.site-list__logo-image:active {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
 .site-list__logo-image--mobile {
   @media (min-width: $tablet-width) {
     display: none;
