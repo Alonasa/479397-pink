@@ -711,6 +711,28 @@
   }
 }
 
+.competition__list-lable {
+  position: relative;
+}
+
+.competition__checkbox:checked + .competition__list-lable::before {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: 7px 9px;
+}
+
+.competition__list-option .competition__list-lable::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  border: solid 2px #e5e5e5;
+  left: -70px;
+  top: -7px;
+}
+
 .competition__requiered {
   @include font-small;
   text-transform: $big;
