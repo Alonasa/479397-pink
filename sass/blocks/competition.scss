@@ -523,7 +523,6 @@
     flex-direction: column-reverse;
     width: 500px;
     margin: 0 auto;
-    // margin-top: 16px;
     margin-bottom: 23px;
   }
 
@@ -555,6 +554,50 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     width: 435px;
+  }
+}
+
+.competition__input-extra {
+  position: relative;
+}
+
+.competition__input-extra::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 63px;
+    background-color: #e5e5e5;
+    left: 440px;
+    top: -73px;
+  }
+}
+
+.competition__label--phone::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 63px;
+    background-color: $clear;
+    left: 458px;
+    top: -52px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.competition__label--email::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 63px;
+    background-color: $clear;
+    left: 459px;
+    top: -49px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -715,14 +758,7 @@
   position: relative;
 }
 
-.competition__checkbox:checked + .competition__list-lable::before {
-  background-image: url("../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-size: 23px;
-  background-position: 7px 9px;
-}
-
-.competition__list-option .competition__list-lable::before {
+.competition__list-lable::before {
   content: "";
   position: absolute;
   width: 35px;
@@ -731,6 +767,44 @@
   border: solid 2px #e5e5e5;
   left: -70px;
   top: -7px;
+
+  @media (min-width: $tablet-width) {
+    left: -59px;
+  }
+}
+
+.competition__checkbox:checked + .competition__list-lable::before {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: 7px 9px;
+}
+
+.competition__app-lable {
+  position: relative;
+}
+
+.competition__app-lable::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: $white;
+  border: solid 2px #e5e5e5;
+  left: -70px;
+  top: -7px;
+
+  @media (min-width: $tablet-width) {
+    left: -59px;
+  }
+}
+
+.competition__radio:checked + .competition__app-lable::before {
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-size: 33px;
+  background-position: 1px 1px;
 }
 
 .competition__requiered {

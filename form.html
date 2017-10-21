@@ -136,12 +136,12 @@
                   <legend class="competition__contact-legend" align="center">Контактная информация</legend>
                   <div class="competition__wrap-1">
                     <p class="competition__input-field">
-                      <label class="competition__label" for="competition__phone">Номер телефона</label>
-                      <input class="competition__input" type="tel" name="competition__phone" id="competition__phone" placeholder="Номер, пожалуйста">
+                      <label class="competition__label competition__input-extra competition__label--phone" for="competition__phone">Номер телефона</label>
+                      <input class="competition__input competition__input--phone" type="tel" name="competition__phone" id="competition__phone" placeholder="Номер, пожалуйста">
                     </p>
                     <p class="competition__input-field">
-                      <label class="competition__label" for="competition__email">Адрес почты</label>
-                      <input class="competition__input" type="email" name="competition__email" id="competition__email" placeholder="Введите почту *">
+                      <label class="competition__label competition__input-extra competition__label--email" for="competition__email">Адрес почты</label>
+                      <input class="competition__input competition__input--email" type="email" name="competition__email" id="competition__email" placeholder="Введите почту *">
                     </p>
                   </div>
                 </fieldset>
@@ -151,16 +151,16 @@
                   <legend class="competition__app-legend" align="center">С каким приложением путешествовали?</legend>
                   <ul class="competition__app-list">
                     <li class="competition__app-item">
-                      <input class="visually-hidden" type="radio" name="competition__ios" id="competition__ios" checked>
-                      <label for="competition__ios competition__radio">Pink для iOS</label>
+                      <input class="visually-hidden competition__radio" type="radio" name="competition__app" id="competition__ios" checked>
+                      <label class="competition__app-lable" for="competition__ios">Pink для iOS</label>
                     </li>
                     <li class="competition__app-item">
-                      <input class="visually-hidden" type="radio" name="competition__android" id="competition__android">
-                      <label for="competition__android competition__radio">Pink на Android</label>
+                      <input class="visually-hidden competition__radio" type="radio" name="competition__app" id="competition__android">
+                      <label class="competition__app-lable" for="competition__android">Pink на Android</label>
                     </li>
                     <li class="competition__app-item">
-                      <input class="visually-hidden" type="radio" name="competition__windows" id="competition__windows">
-                      <label for="competition__windows competition__radio">Windows Phone</label>
+                      <input class="visually-hidden competition__radio" type="radio" name="competition__app" id="competition__windows">
+                      <label class="competition__app-lable" for="competition__windows">Windows Phone</label>
                     </li>
                   </ul>
                 </fieldset>
