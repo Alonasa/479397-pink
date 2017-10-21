@@ -196,6 +196,20 @@
   }
 }
 
+.competition__input:hover,
+.competition__input-field input[type="tel"]:hover,
+.competition__input-field input[type="email"]:hover,
+.competition__textarea:hover {
+  border: 2px solid #283645;
+}
+
+.competition__input:active,
+.competition__input-field input[type="tel"]:active,
+.competition__input-field input[type="email"]:active,
+.competition__textarea:active {
+  border: 2px solid #d22856;
+}
+
 .competition__input-info input[type="text"]::placeholder,
 .competition__input-field input[type="tel"]::placeholder,
 .competition__input-field input[type="email"]::placeholder {
@@ -822,6 +836,16 @@
   background-repeat: no-repeat;
   background-size: 33px;
   background-position: 1px 1px;
+}
+
+.competition__app-lable:hover::before,
+.competition__list-lable:hover::before {
+  border: solid 2px $main-blue;
+}
+
+.competition__app-lable:active::before,
+.competition__list-lable:active::before {
+  border: solid 2px $pink;
 }
 
 .competition__requiered {

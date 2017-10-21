@@ -84,6 +84,13 @@
   opacity: 0.3;
 }
 
+.site-list__link--current {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
+    border-bottom: 2px solid $white;
+  }
+}
+
 .site-list__item--logo {
   padding: 21px 20px 13px;
   text-align: left;
