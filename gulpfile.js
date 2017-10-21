@@ -6,7 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var rename = require("gulp-rename");
-var imagemin = require("gulp-imagemin");
+var images = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var minify = require("gulp-csso");
@@ -47,7 +47,7 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("*.html").on("change", server.reload);
 });
 
-gulp.task("imagemin", function () {
+gulp.task("images", function () {
 	return gulp.src("img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
@@ -70,4 +70,76 @@ gulp.task("sprite", function() {
     }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("html", function () {
+  return gulp.src("*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("jsmin", function() {
+  return gulp.src("js/*.js")
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: ".min"
+    }))
+    .pipe(gulp.dest("build/js"));
+});
+
+gulp.task("html", function() {
+  return gulp.src("*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"))
+    .pipe(server.stream());
+});
+
+gulp.task("clean", function() {
+  return del("build");
+});
+
+gulp.task("copy", function() {
+  return gulp.src([
+    "fonts/**/*.{woff,woff2}",
+    "img/**",
+    "js/**"
+  ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task("build", function(done) {
+  run("style", "sprite", "html", done);
+});
+
+gulp.task("build", function(done) {
+  run(
+    "clean",
+    "copy",
+    "style",
+    "jsmin",
+    "images",
+    "webp",
+    "sprite",
+    "html",
+    done
+  );
+});
+
+gulp.task("serve",function() {
+  server.init({
+    server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+
+  gulp.watch("sass/**/*.{scss,sass}", ["style"]).on('change', server.reload);
+  gulp.watch("*.html", ["html"]).on('change', server.reload);
 });
