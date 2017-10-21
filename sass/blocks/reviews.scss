@@ -46,6 +46,20 @@
 .reviews__list {
   @include zero;
   list-style: $list;
+  position: relative;
+}
+
+.reviews__list::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 305px;
+    top: 47px;
+    background: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .reviews__item {
