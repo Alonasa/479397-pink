@@ -16,10 +16,12 @@
 
 .effect__wrapper {
   @media (min-width: $tablet-width) {
+    position: relative;
     margin: 0 auto;
     width: 620px;
     min-height: 400px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-end;
   }
@@ -28,6 +30,7 @@
     width: 940px;
     min-height: 478px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
   }
@@ -37,6 +40,7 @@
   @media (min-width: $tablet-width) {
     width: 311px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-end;
   }
@@ -44,10 +48,77 @@
   @media (min-width: $desktop-width) {
     width: 574px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-end;
   }
 }
+
+.effect__wrapper::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "24";
+    z-index: 1;
+    text-align: center;
+    font-weight: $fw-bold;
+    font-size: 96px;
+    line-height: 171px;
+    vertical-align: middle;
+    color: $pink;
+    width: 239px;
+    height: 281px;
+    left: 0;
+    top: -11px;
+    padding-top: 135px;
+    background-color: $clear;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 239px, 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 121px;
+    font-weight: 900;
+    line-height: 157px;
+    color: $pink;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    padding-top: 176px;
+    background-size: 298px, 280px;
+    background-position: center;
+  }
+}
+
+.effect__wrapper::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: 32px;
+    top: 127px;
+    z-index: 3;
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+    background-color: $clear;
+    box-shadow: 0 0 0 13px #d22856;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    left: 40px;
+    top: 151.5px;
+    width: 219px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: $clear;
+    box-shadow: 0 0 0 17px #d22856;
+  }
+}
+
 
 .effect__title {
   @include zero;
