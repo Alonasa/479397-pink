@@ -571,6 +571,12 @@
     left: 440px;
     top: -73px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 62px;
+    left: 313px;
+    top: -63px;
+  }
 }
 
 .competition__label--phone::after {
@@ -585,6 +591,12 @@
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 62px;
+    left: 333px;
+    top: -42px;
+  }
 }
 
 .competition__label--email::after {
@@ -598,6 +610,11 @@
     top: -49px;
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 334px;
+    top: -38px;
   }
 }
 
