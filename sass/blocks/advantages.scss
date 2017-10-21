@@ -85,9 +85,130 @@
   width: 160px;
   height: 278px;
   bottom: 0;
-  right: 57px;
+  right: 58px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 268px;
+    height: 481px;
+    bottom: -41px;
+    left: -307px;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 268px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    bottom: 81px;
+    left: -23px;
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 292px 302px;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-size: 292px auto;
+    }
+  }
+}
+
+.advantages__mood {
+  position: relative;
+}
+
+.advantages__mood::after {
+  // @media (min-width: $tablet-width) {
+  //   content: "";
+  //   position: absolute;
+  //   width: 268px;
+  //   height: 481px;
+  //   bottom: -41px;
+  //   left: -307px;
+  //   background-image: url("../img/iphone-screen-1-tablet@1x.png");
+  //   background-repeat: no-repeat;
+  //
+  //   @media (min-resolution: $retina-dpi),
+  //     (min-resolution: $retina-dppx) {
+  //     background-image: url("../img/iphone-screen-1-tablet@2x.png");
+  //     background-size: 268px auto;
+  //   }
+  // }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    bottom: 260px;
+    left: -25px;
+    width: 292px;
+    height: 302px;
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 292px 302px;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-size: 292px auto;
+    }
+  }
+}
+
+.advantages__photo-decoration {
+  position: relative;
+}
+
+.advantages__photo-decoration::after {
+  // @media (min-width: $tablet-width) {
+  //   content: "";
+  //   position: absolute;
+  //   width: 268px;
+  //   height: 481px;
+  //   bottom: -41px;
+  //   left: -307px;
+  //   background-image: url("../img/iphone-screen-2-tablet@1x.png");
+  //   background-repeat: no-repeat;
+  //
+  //   @media (min-resolution: $retina-dpi),
+  //     (min-resolution: $retina-dppx) {
+  //     background-image: url("../img/iphone-screen-2-tablet@2x.png");
+  //     background-size: 268px auto;
+  //   }
+  // }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    bottom: 260px;
+    left: -22px;
+    width: 292px;
+    height: 302px;
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 292px 302px;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      background-size: 292px auto;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -153,10 +274,6 @@
     padding-bottom: 0;
   }
 
-  .advantages__friends::after {
-    left: -250px;
-  }
-
   .advantages__wrap {
     display: block;
   }
@@ -191,7 +308,7 @@
 
   .advantages__head {
     margin: 0 auto;
-    min-height: 373px;
+    min-height: 364px;
     width: 100%;
   }
 
@@ -223,11 +340,11 @@
     text-align: center;
   }
 
-  .advantages__friends::after {
-    display: none;
-  }
-
   .advantages__wrap {
     display: inline;
+  }
+
+  .advantages__list {
+    padding-top: 31px;
   }
 }

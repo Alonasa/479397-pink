@@ -9,6 +9,52 @@
   flex-wrap: wrap;
 }
 
+.site-list__logo-image {
+  fill: #ffffff;
+}
+
+.site-list__logo-image:hover {
+  fill: $pink;
+}
+
+.site-list__logo-image:active {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.site-list__logo-image--mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.site-list__logo-image--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.site-list__logo-image--desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .site-list__logo-block {
   @include zero;
   list-style: $list;
@@ -49,28 +95,11 @@
   color: $white;
 }
 
-.site-list__logo-image {
-  width: 76px;
-}
-
-.site-list__logo:hover {
-  path {
-    fill: $pink;
-  }
-}
-
-.site-list__logo:active {
-  path {
-    fill: $white;
-    opacity: 0.3;
-  }
-}
-
 .site-list__toggle {
   @include zero;
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: 7px;
+  right: 0;
   z-index: 2;
   display: block;
   width: 70px;
@@ -78,6 +107,20 @@
   cursor: pointer;
   border: none;
   background-color: rgba(0, 0, 0, 0);
+  fill: $white;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
+
+.site-list__toggle--open {
+  margin-left: 27px;
 }
 
 .site-list--closed {
@@ -93,57 +136,20 @@
   }
 }
 
-.site-list--closed .site-list__toggle::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 0;
-  width: 50px;
-  height: 4px;
-  color: #ffffff;
-  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff, 0 30px 0 0 #ffffff;
+.site-list--opened .site-list__toggle-menu {
+  display: none;
 }
 
-// .site-list--closed .site-list__toggle:active::before {
-//   background-color: rgba(210, 40, 86, 0.3);
-//   box-shadow: 0 8px 0 0 rgba(210, 40, 86, 0.3);
-// }
-
-.site-list--closed .site-list__toggle:hover::before {
-  background-color: rgba(210, 40, 86, 1);
-  box-shadow: 0 8px 0 0 rgba(210, 40, 86, 1);
+.site-list--closed .site-list__toggle-menu {
+  display: block;
 }
 
-.site-list--opened .site-list__toggle {
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 30px;
-    right: 0;
-    width: 30px;
-    height: 4px;
-    background-color: #ffffff;
-  }
+.site-list--opened .site-list__toggle--open {
+  display: block;
+}
 
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
-  &:hover::before,
-  &:hover::after {
-    background-color: rgba(210, 40, 86, 1);
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: rgba(210, 40, 86, 0.3);
-  }
+.site-list--closed .site-list__toggle--open {
+  display: none;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -165,19 +171,8 @@
     right: 0;
     left: 0;
     z-index: 10;
-    min-width: 200px;
+    min-width: 320px;
     min-height: 20vh;
-  }
-
-  .site-list--opened .site-list__nav-block::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 7px;
-    height: 100%;
-    box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.4);
   }
 
   .site-list--nojs .site-list__toggle {
@@ -186,12 +181,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-list__logo-block {
-    height: 110px;
+  .site-list__logo-image {
+    padding: 5px 0 5px;
   }
 
-  .site-list__logo-image {
-    padding: 26px 0 40px;
+  .site-list__logo {
+    height: 40px;
+    width: 146px;
   }
 
   .site-list__item {
@@ -221,9 +217,9 @@
     background-color: $clear;
   }
 
-  .site-list__logo-block {
-    width: 150px;
-  }
+  // .site-list__logo-block {
+  //   width: 150px;
+  // }
 
   .site-list__nav-block {
     min-width: 620px;
@@ -240,10 +236,15 @@
   }
 
   .site-list__item--logo {
-    padding: 0;
+    @include zero;
+    padding-bottom: 10px;
   }
 
   .site-list__toggle {
     display: none;
+  }
+
+  .site-list__logo-image {
+    padding: 0 0 5px;
   }
 }

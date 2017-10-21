@@ -2,22 +2,33 @@
   @include zero;
   margin: 0 auto;
   width: 100%;
-  min-height: 614px;
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   font-size: $s-med;
   font-weight: $fw-small;
+  position: relative;
+}
+
+.contacts::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 370px;
+  left: 0;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 205px;
+  background-position-y: 13px;
 
   @media (min-width: $tablet-width) {
-    min-height: 779px;
+    top: 394px;
+    background-size: contain;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 868px;
+    background-size: contain;
+    top: 350px;
   }
 }
-
 
 .contacts__container {
   text-align: center;
@@ -35,6 +46,7 @@
   @media (min-width: $tablet-width) {
     width: 620px;
     min-height: 390px;
+    padding-bottom: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +56,7 @@
   @media (min-width: $desktop-width) {
     width: 940px;
     min-height: 364px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,4 +168,46 @@
 
 .contacts__e-mail:active {
   color: rgba(40, 54, 69, 0.3);
+}
+
+.contacts__map {
+  width: 100%;
+  position: relative;
+  min-height: 213px;
+  background-color: #eae6dd;
+  background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 371px;
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: 188px, -353px;
+    background-size: auto, auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 504px;
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: 253px, -288px;
+    background-size: auto;
+  }
+}
+
+.contacts__google-map {
+  width: 100%;
+  height: 213px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 371px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 505px;
+  }
 }
