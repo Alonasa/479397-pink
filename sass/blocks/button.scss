@@ -13,4 +13,8 @@
 .button__modal {
   text-transform: $big;
   background-color: #2aab6d;
+
+  &--1 {
+    width: 460px;
+  }
 }

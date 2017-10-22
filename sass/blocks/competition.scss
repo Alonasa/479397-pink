@@ -196,6 +196,20 @@
   }
 }
 
+.competition__input:hover,
+.competition__input-field input[type="tel"]:hover,
+.competition__input-field input[type="email"]:hover,
+.competition__textarea:hover {
+  border: 2px solid #283645;
+}
+
+.competition__input:active,
+.competition__input-field input[type="tel"]:active,
+.competition__input-field input[type="email"]:active,
+.competition__textarea:active {
+  border: 2px solid #d22856;
+}
+
 .competition__input-info input[type="text"]::placeholder,
 .competition__input-field input[type="tel"]::placeholder,
 .competition__input-field input[type="email"]::placeholder {
@@ -523,7 +537,6 @@
     flex-direction: column-reverse;
     width: 500px;
     margin: 0 auto;
-    // margin-top: 16px;
     margin-bottom: 23px;
   }
 
@@ -555,6 +568,67 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     width: 435px;
+  }
+}
+
+.competition__input-extra {
+  position: relative;
+}
+
+.competition__input-extra::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 63px;
+    background-color: #e5e5e5;
+    left: 440px;
+    top: -73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 62px;
+    left: 313px;
+    top: -63px;
+  }
+}
+
+.competition__label--phone::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 63px;
+    background-color: $clear;
+    left: 458px;
+    top: -52px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 62px;
+    left: 333px;
+    top: -42px;
+  }
+}
+
+.competition__label--email::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 63px;
+    background-color: $clear;
+    left: 459px;
+    top: -49px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 334px;
+    top: -38px;
   }
 }
 
@@ -709,6 +783,78 @@
   @media (min-width: $tablet-width) {
     width: 300px;
   }
+}
+
+.competition__button:hover {
+  background-color: #1c9b5e;
+}
+
+.competition__button:active {
+  background-color: #1c9b5e;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.competition__list-lable {
+  position: relative;
+}
+
+.competition__list-lable::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  border: solid 2px #e5e5e5;
+  left: -70px;
+  top: -7px;
+
+  @media (min-width: $tablet-width) {
+    left: -59px;
+  }
+}
+
+.competition__checkbox:checked + .competition__list-lable::before {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: 7px 9px;
+}
+
+.competition__app-lable {
+  position: relative;
+}
+
+.competition__app-lable::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: $white;
+  border: solid 2px #e5e5e5;
+  left: -70px;
+  top: -7px;
+
+  @media (min-width: $tablet-width) {
+    left: -59px;
+  }
+}
+
+.competition__radio:checked + .competition__app-lable::before {
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-size: 33px;
+  background-position: 1px 1px;
+}
+
+.competition__app-lable:hover::before,
+.competition__list-lable:hover::before {
+  border: solid 2px $main-blue;
+}
+
+.competition__app-lable:active::before,
+.competition__list-lable:active::before {
+  border: solid 2px $pink;
 }
 
 .competition__requiered {
