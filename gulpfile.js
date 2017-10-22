@@ -31,18 +31,18 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("serve", ["style"], function() {
-  server.init({
-    server: ".",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
-  });
-
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
-});
+// gulp.task("serve", ["style"], function() {
+//   server.init({
+//     server: ".",
+//     notify: false,
+//     open: true,
+//     cors: true,
+//     ui: false
+//   });
+//
+//   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+//   gulp.watch("*.html").on("change", server.reload);
+// });
 
 gulp.task("imagemin", function () {
 	return gulp.src("img/**/*.{png,jpg,svg}")
