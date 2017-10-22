@@ -6,7 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var rename = require("gulp-rename");
-var images = require("gulp-imagemin");
+var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var minify = require("gulp-csso");
@@ -22,10 +22,7 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer({browsers: [
-        "last 2 versions",
-        "IE 11",
-        "Firefox")
+      autoprefixer()
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
@@ -47,7 +44,7 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("*.html").on("change", server.reload);
 });
 
-gulp.task("images", function () {
+gulp.task("imagemin", function () {
 	return gulp.src("img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
@@ -123,7 +120,7 @@ gulp.task("build", function(done) {
     "copy",
     "style",
     "jsmin",
-    "images",
+    "imagemin",
     "webp",
     "sprite",
     "html",
