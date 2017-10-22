@@ -1,5 +1,6 @@
 .slider {
   @include zero;
+  position: relative;
 }
 
 .slider input[type="radio"] {
@@ -39,6 +40,62 @@
 
 .slider__controlls label:hover {
   background-color: rgba(40, 54, 69, 0.6);
+}
+
+.slider__arrow {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    display: block;
+    background-color: $clear;
+    opacity: 0.3;
+  }
+}
+
+.slider__arrow:hover {
+  opacity: 0.6;
+}
+
+.slider__arrow:active {
+  opacity: 0.1;
+}
+
+.slider__arrow--previous {
+  @media (min-width: $desktop-width) {
+    border: none;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-color: $clear;
+    background-repeat: no-repeat;
+    left: -130px;
+    top: 212px;
+  }
+}
+
+.slider__arrow--next {
+  @media (min-width: $desktop-width) {
+    border: none;
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-color: $clear;
+    background-repeat: no-repeat;
+    background-position: 20px;
+    left: 770px;
+    top: 212px;
+    padding-left: 20px;
+  }
 }
 
 .slider__btn1:checked ~ .slider__controlls label[for="slider__btn1"],

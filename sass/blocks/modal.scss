@@ -1,13 +1,72 @@
 .modal {
   @include font-small;
-  display: none;
   text-align: center;
   background-color: $white;
   padding: 45px 0 50px;
+
+  @media (min-width: $tablet-width) {
+    @include font-medium-line;
+    line-height: 24px;
+    width: 460px;
+    margin: 0 auto;
+  }
+}
+
+.modal__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.modal__title {
+  @media (min-width: $tablet-width) {
+    font-size: $s-large;
+    font-weight: $fw-bold;
+    line-height: 40px;
+    width: 230px;
+    margin: 0 auto;
+  }
+}
+
+.modal__success {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    width: 720px;
+  }
+}
+
+.modal__success .modal__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 420px;
+  }
+}
+
+.modal__success--title {
+  @media (min-width: $desktop-width) {
+    width: 420px;
+  }
 }
 
 .modal__success--block {
   @include zero;
   background-color: $main-pink;
   height: 164px;
+}
+
+.modal__success--button {
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+  }
+}
+
+.modal__wrapper1 {
+  @media (min-width: $desktop-width) {
+    width: 460px;
+  }
+}
+
+.modal__error {
+  display: none;
 }

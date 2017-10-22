@@ -17,15 +17,12 @@
               <li class="site-list__item--logo">
                 <a class="site-list__logo">
                   <svg class="site-list__logo-image site-list__logo-image--desktop" width="146.3" height="40.375">
-                    <title>Главный логотип компании Пинк</title>
                     <use xlink:href="img/logo-sprite.svg#logo-pink-white-desktop"></use>
                   </svg>
                   <svg class="site-list__logo-image site-list__logo-image--tablet" width="146.3" height="40.375">
-                    <title>Главный логотип компании Пинк</title>
                     <use xlink:href="img/logo-sprite.svg#logo-pink-white-tablet"></use>
                   </svg>
                   <svg class="site-list__logo-image site-list__logo-image--mobile" width="74.426" height="22.859">
-                    <title>Главный логотип компании Пинк</title>
                     <use xlink:href="img/logo-sprite.svg#logo-pink-white-mobile"></use>
                   </svg>
                 </a>
@@ -42,7 +39,7 @@
             </ul>
             <ul class="site-list__nav-block">
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="index.html">Главная</a>
+                <a class="site-list__link site-list__link--current" href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="photo.html">Фотографии</a>
@@ -151,6 +148,12 @@
               <label class="reviews__controller slider__controller" for="slider__btn2"></label>
               <label class="reviews__controller slider__controller" for="slider__btn3"></label>
             </div>
+            <button class="reviews__arrow slider__arrow slider__arrow--next" type="button">
+            <span class="visually-hidden">Следующий</span>
+            </button>
+            <button class="reviews__arrow slider__arrow slider__arrow--previous" type="button">
+            <span class="visually-hidden">Предыдущий</span>
+            </button>
             <ul class="reviews__list slider__items">
               <li class="reviews__item-row slider__item slider__item--1">
                 <blockquote class="reviews__item">
@@ -219,22 +222,49 @@
                 </td>
               </tr>
               <tr class="prices__item">
-                <td class="prices__value prices__pink-filter">Розовый фильтр</td>
-                <td class="prices__value prices__pink-filter">Розовый фильтр</td>
-                <td class="prices__value prices__pink-filter">Розовый фильтр</td>
-                <td class="prices__value prices__pink-filter">Розовый фильтр</td>
+                <td class="prices__value prices__value--side  prices__pink-filter">Розовый фильтр</td>
+                <td class="prices__value prices__pink-filter">
+                  <svg class="prices__value--yes" width="21.698" height="16.09">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>Розовый фильтр</td>
+                <td class="prices__value prices__pink-filter">
+                  <svg class="prices__value--yes" width="21.698" height="16.09">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>Розовый фильтр</td>
+                <td class="prices__value prices__pink-filter">
+                  <svg class="prices__value--yes" width="21.698" height="16.09">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>Розовый фильтр</td>
               </tr>
               <tr class="prices__item">
-                <td class="prices__value prices__smile">Смайлики</td>
-                <td class="prices__value prices__smile">Смайлики</td>
-                <td class="prices__value prices__smile">Смайлики</td>
-                <td class="prices__value prices__smile">Смайлики</td>
+                <td class="prices__value prices__value--side prices__smile">Смайлики</td>
+                <td class="prices__value prices__smile">
+                  <svg class="prices__value--no" width="26.752" height="26.752">
+                  <use xlink:href="img/sprite.svg#icon-no"></use>
+                  </svg>Смайлики</td>
+                <td class="prices__value prices__smile">
+                  <svg class="prices__value--yes" width="21.698" height="16.09">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>Смайлики</td>
+                <td class="prices__value prices__smile">
+                  <svg class="prices__value--yes" width="21.698" height="16.09">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>Смайлики</td>
               </tr>
               <tr class="prices__item">
-                <td class="prices__value prices__comment">Комментарии</td>
-                <td class="prices__value prices__comment">Комментарии</td>
-                <td class="prices__value prices__comment">Комментарии</td>
-                <td class="prices__value prices__comment">Комментарии</td>
+                <td class="prices__value prices__value--side prices__comment">Комментарии</td>
+                <td class="prices__value prices__comment">
+                  <svg class="prices__value--no" width="26.752" height="26.752">
+                  <use xlink:href="img/sprite.svg#icon-no"></use>
+                  </svg>Комментарии</td>
+                <td class="prices__value prices__comment">
+                  <svg class="prices__value--no" width="26.752" height="26.752">
+                  <use xlink:href="img/sprite.svg#icon-no"></use>
+                  </svg>Комментарии</td>
+                <td class="prices__value prices__comment">
+                  <svg class="prices__value--yes" width="21.698" height="16.09">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                  </svg>Комментарии</td>
               </tr>
             </table>
           </div>
