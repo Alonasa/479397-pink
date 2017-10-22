@@ -59,4 +59,3 @@ gulp.task("sprite", function() {
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("img"));
 });
-"use strict";

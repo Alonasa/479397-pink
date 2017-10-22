@@ -785,6 +785,15 @@
   }
 }
 
+.competition__button:hover {
+  background-color: #1c9b5e;
+}
+
+.competition__button:active {
+  background-color: #1c9b5e;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .competition__list-lable {
   position: relative;
 }
