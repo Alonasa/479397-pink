@@ -32,7 +32,7 @@ gulp.task("style", function() {
 });
 
 gulp.task("imagemin", function () {
-	return gulp.src("img/**/*.{png,jpg,svg}")
+  return gulp.src("img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
