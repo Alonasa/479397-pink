@@ -31,21 +31,8 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-// gulp.task("serve", ["style"], function() {
-//   server.init({
-//     server: ".",
-//     notify: false,
-//     open: true,
-//     cors: true,
-//     ui: false
-//   });
-//
-//   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-//   gulp.watch("*.html").on("change", server.reload);
-// });
-
 gulp.task("imagemin", function () {
-	return gulp.src("img/**/*.{png,jpg,svg}")
+  return gulp.src("img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),

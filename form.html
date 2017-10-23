@@ -14,7 +14,7 @@
         <div class="main-nav__wrapper">
           <div class="main-nav__list site-list site-list--nojs site-list--opened">
             <ul class="site-list__logo-block">
-              <li class="site-list__item site-list__item--logo">
+              <li class="site-list__logo-header">
                 <a class="site-list__logo" href="index.html">
                   <svg class="site-list__logo-image site-list__logo-image--desktop" width="146.3" height="40.375">
                     <title>Главный логотип компании Пинк</title>
@@ -173,36 +173,36 @@
               </div>
               <div class="competition__sender">
                 <div class="competition__sender-container">
-                  <button class="button  button__modal competition__button competition__modal-button" type="submit">Отправить форму</button>
+                  <button class="competition__button competition__modal-button button button__modal" type="submit">Отправить форму</button>
                   <p class="competition__requiered"><span class="competition__star-marker">*</span> — Обязательные <span class="competition__requiered-hide">для заполнения</span> поля</p>
+                </div>
+                <div class="modal modal__error">
+                  <div class="modal__wrapper">
+                    <h3 class="modal__title modal__title--error">Что-то пошло не так!</h3>
+                    <p class="modal__description modal__description--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                    <button class="modal__button modal__button--error competition__button button button__modal" type="button">Ок</button>
+                  </div>
+                </div>
+                <div class="modal modal__success">
+                  <div class="modal__wrapper">
+                    <h3 class="modal__title modal__title--success">Ваша заявка отправлена</h3>
+                    <p class="modal__description modal__description--success">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+                  </div>
+                  <div class="modal__success modal__success--block">
+                    <p class="modal__wrapper modal__wrapper1">
+                      <button class="modal__button modal__button--success button button__modal button__modal--1 competition__button" type="button">Закрыть окно</button>
+                    </p>
+                  </div>
                 </div>
               </div>
             </form>
-            <div class="modal modal__error">
-              <div class="modal__wrapper">
-                <h3 class="modal__title modal__error--title">Что-то пошло не так!</h3>
-                <p class="modal__description modal__error--description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-                <button class="button button__modal modal__error--button competition__button" type="button">Ок</button>
-              </div>
-            </div>
-            <div class="modal modal__success">
-              <div class="modal__wrapper">
-                <h3 class="modal__title modal__success--title">Ваша заявка отправлена</h3>
-                <p class="modal__description modal__success--description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-              </div>
-              <div class="modal__success--block">
-                <p class="modal__wrapper modal__wrapper1">
-                  <button class="button button__modal button__modal--1 modal__success--button competition__button" type="button">Закрыть окно</button>
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer-form">
       <div class="footer-form__wrapper">
-        <a class="footer-form__logo footer__logo-block" href="index.html">
+        <a class="footer-form__logo" href="index.html">
           <svg class="footer-form__logo-image footer__logo-block footer__logo-block--desktop" width="146.3" height="40.375">
             <title>Логотип компании Пинк</title>
             <use xlink:href="img/logo-sprite.svg#logo-pink-blue-desktop"></use>
