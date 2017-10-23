@@ -43,7 +43,7 @@
   }
 }
 
-.modal__success--title {
+.modal__title--success {
   @media (min-width: $desktop-width) {
     width: 420px;
   }
@@ -55,7 +55,7 @@
   height: 164px;
 }
 
-.modal__success--button {
+.modal__button--success {
   @media (min-width: $tablet-width) {
     margin-top: 50px;
   }
