@@ -23,6 +23,7 @@
   padding-top: 45px;
   width: 244px;
   text-align: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     @include font-medium;
@@ -32,6 +33,34 @@
 
   @media (min-width: $desktop-width) {
     width: 580px;
+  }
+}
+
+.photos__description::after {
+  @include zero;
+  @include button-zero;
+  content: "Панорама дня";
+  width: 120px;
+  min-height: 20px;
+  font-size: 12px;
+  padding: 6px 10px;
+  font-weight: $fw-bold;
+  line-height: $s-med;
+  text-transform: $big;
+  color: $white;
+  background-color: $pink;
+  position: absolute;
+  top: 184px;
+  left: 122px;
+
+  @media (min-width: $tablet-width) {
+    top: 285px;
+    left: 395px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 294px;
+    left: 620px;
   }
 }
 
@@ -48,35 +77,6 @@
 
   @media (min-width: $desktop-width) {
     height: 506px;
-  }
-}
-
-.photos__top-day {
-  position: relative;
-}
-
-.photos__top-rated {
-  @include zero;
-  font-size: 12px;
-  padding: 6px 21px;
-  font-weight: $fw-bold;
-  line-height: $s-med;
-  text-transform: $big;
-  color: $white;
-  background-color: $pink;
-  position: absolute;
-  top: 0;
-  left: 160px;
-  margin-bottom: -143px;
-
-  @media (min-width: $tablet-width) {
-    top: 57px;
-    left: 500px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 54px;
-    left: 810px;
   }
 }
 
@@ -249,7 +249,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // padding-left: 6px;
     @include zero;
   }
 }
