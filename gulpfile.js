@@ -31,6 +31,31 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+//   // alive server
+//
+// gulp.task("serve", ["style"], function() {
+//   server.init({
+//     server: ".",
+//     notify: false,
+//     open: true,
+//     cors: true,
+//     ui: false
+//   });
+//
+//   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+//   gulp.watch("*.html").on("change", server.reload);
+// });
+
+// posthtml
+
+gulp.task("html", function () {
+  return gulp.src("*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("imagemin", function () {
   return gulp.src("img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
@@ -99,6 +124,7 @@ gulp.task("build", function(done) {
     "imagemin",
     "webp",
     "sprite",
+    "html",
     "logo-sprite",
     done
   );

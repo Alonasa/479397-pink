@@ -94,11 +94,11 @@
     @include zero;
     width: 430px;
     margin: 0 auto;
-    padding-top: 45px;
+    padding-top: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 5px;
+    padding-top: 6px;
   }
 }
 
@@ -385,13 +385,3 @@
     left: 31px;
   }
 }
-
-// .post-photo__divider {
-//   height: 1px;
-//   color: #dddfe0;
-//   border: none;
-//   background-color: #dddfe0;
-//
-//   @media (min-width: $tablet-width) {
-//     display: none
-// }

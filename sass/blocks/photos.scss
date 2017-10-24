@@ -103,7 +103,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,7 +111,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
   }
 }
 
@@ -129,16 +127,40 @@
   }
 }
 
+.photos__list:nth-last-of-type {
+  margin-bottom: 0;
+}
+
+.photos__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
+}
+
 .photos__item {
   @include zero;
   @include font-xsmall;
   padding: 12px 20px 0 17px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     padding: 18px 20px 0 27px;
+    min-height: 105px;
+    flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 105px;
+    flex-grow: 1;
     padding: 18px 20px 0 28px;
   }
 }
@@ -153,7 +175,8 @@
 
   @media (min-width: $tablet-width) {
     width: 562px;
-    padding: 24px 31px 25px 27px;
+    min-height: 65px;
+    padding: 24px 31px 10px 27px;
     position: relative;
     top: 0;
     left: 0;
@@ -162,6 +185,7 @@
 
   @media (min-width: $desktop-width) {
     width: 883px;
+    min-height: 72px;
     padding: 24px 30px 0 27px;
   }
 }
@@ -179,11 +203,11 @@
   @include zero;
 
   @media (min-width: $tablet-width) {
-    min-height: 48px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 48px;
+    margin-bottom: 15px;
   }
 }
 
@@ -199,22 +223,21 @@
   align-items: flex-end;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     width: 241px;
-    height: 20px;
+    line-height: 20px;
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
-    align-content: flex-end;
-    padding: 12px 0 27px;
+    margin-top: auto;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     width: 240px;
-    height: 20px;
-    padding-top: 12px;
+    line-height: 19px;
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
+    margin-top: auto;
   }
 }
 
@@ -226,18 +249,19 @@
     flex-direction: row;
     align-items: flex-end;
     position: absolute;
-    top: 11px;
+    top: 27px;
     left: 472px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       width: 118px;
-      top: 11px;
+      top: 24px;
       padding-left: 16px;
     }
   }
 
   @media (min-width: $desktop-width) {
     left: 773px;
+    top: 26px;
   }
 }
 
@@ -274,6 +298,10 @@
   @media (min-width: $desktop-width) {
     order: 2;
   }
+}
+
+.photos__posting-date {
+  font-weight: $fw-med;
 }
 
 .photos__users {

@@ -10,7 +10,7 @@
 }
 
 .site-list__logo-image {
-  fill: #ffffff;
+  fill: $white;
 }
 
 .site-list__logo-image:hover {
@@ -70,9 +70,13 @@
   list-style: $list;
   line-height: $s-big;
   background-color: $main-blue;
-  border-bottom: 2px solid #000000;
-  outline: 1px solid #485461;
+  border-bottom: 2px solid $black;
+  outline: 1px solid $grey;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin: 20px 0;
+  }
 }
 
 .site-list__link:hover {
