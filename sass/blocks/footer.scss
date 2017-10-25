@@ -43,7 +43,7 @@
 }
 
 .footer__logo-block {
-  fill: #283645;
+  fill: $main-blue;
 
   &:hover {
     fill: $pink;
@@ -51,7 +51,7 @@
 
   &:active {
     opacity: 0.3;
-    fill: #283645;
+    fill: $main-blue;
   }
 }
 

@@ -183,7 +183,7 @@
 .competition__input-field input[type="email"] {
   width: 234px;
   padding: 19px 21px 18px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $fair-grey;
   color: $main-blue;
   border-radius: 0;
 
@@ -211,14 +211,14 @@
 .competition__input-field input[type="tel"]:hover,
 .competition__input-field input[type="email"]:hover,
 .competition__textarea:hover {
-  border: 2px solid #283645;
+  border: 2px solid $main-blue;
 }
 
 .competition__input:active,
 .competition__input-field input[type="tel"]:active,
 .competition__input-field input[type="email"]:active,
 .competition__textarea:active {
-  border: 2px solid #d22856;
+  border: 2px solid $pink;
 }
 
 .competition__input-info input[type="text"]::placeholder,
@@ -304,7 +304,7 @@
     @include zero;
     margin-bottom: 55px;
     background-color: inherit;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $fair-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -483,7 +483,7 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: 616px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $fair-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -616,7 +616,7 @@
     @include zero;
     margin: 0 auto;
     width: 616px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $fair-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -687,7 +687,7 @@
 
   @media (min-width: $tablet-width) {
     width: 616px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $fair-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -701,7 +701,7 @@
   width: 248px;
   height: 169px;
   padding: 14px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $fair-grey;
   color: $main-blue;
 
   @media (min-width: $tablet-width) {
@@ -759,11 +759,11 @@
 }
 
 .competition__button:hover {
-  background-color: #1c9b5e;
+  background-color: $gray-btn;
 }
 
 .competition__button:active {
-  background-color: #1c9b5e;
+  background-color: $gray-btn;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -777,7 +777,7 @@
   width: 35px;
   height: 35px;
   background-color: $white;
-  border: solid 2px #e5e5e5;
+  border: solid 2px $fair-grey;
   left: -70px;
   top: -7px;
 
@@ -804,7 +804,7 @@
   height: 35px;
   border-radius: 50%;
   background-color: $white;
-  border: solid 2px #e5e5e5;
+  border: solid 2px $fair-grey;
   left: -70px;
   top: -7px;
 

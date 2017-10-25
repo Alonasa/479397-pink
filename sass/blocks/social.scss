@@ -28,12 +28,12 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  border: 3px solid #e9ebec;
+  border: 3px solid $grey-social;
   display: inline-block;
 }
 
 .social__item:hover {
-  border: 3px solid #000000;
+  border: 3px solid $black;
 }
 
 .social__item:active {

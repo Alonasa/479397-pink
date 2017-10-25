@@ -103,7 +103,7 @@
     height: 176px;
     border-radius: 50%;
     background-color: $clear;
-    box-shadow: 0 0 0 13px #d22856;
+    box-shadow: 0 0 0 13px $pink;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,7 +115,7 @@
     height: 220px;
     border-radius: 50%;
     background-color: $clear;
-    box-shadow: 0 0 0 17px #d22856;
+    box-shadow: 0 0 0 17px $pink;
   }
 }
 

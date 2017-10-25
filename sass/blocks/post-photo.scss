@@ -202,8 +202,8 @@
 }
 
 .post-photo__button--disabled {
-  border: 3px solid #283645;
-  color: #283645;
+  border: 3px solid $main-blue;
+  color: $main-blue;
   opacity: 0.1;
 }
 
@@ -212,7 +212,7 @@
 }
 
 .post-photo__button--disabled:active {
-  background-color: #283645;
+  background-color: $main-blue;
   color: rgba(255, 255, 255, 0.3);
 }
 

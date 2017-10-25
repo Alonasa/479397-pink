@@ -40,7 +40,7 @@
   min-width: 280px;
   min-height: 242px;
   padding-top: 29px;
-  background-color: #1d2631;
+  background-color: $fair-blue;
 
   @media (min-width: $tablet-width) {
     @include zero;
@@ -144,7 +144,7 @@
   position: relative;
   margin-top: -70px;
   z-index: -1;
-  background: #2d3c4b url("../img/bg-back-mobile@1x.jpg");
+  background: $bg-blue url("../img/bg-back-mobile@1x.jpg");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -160,7 +160,7 @@
     text-align: center;
     position: relative;
     margin-top: -112px;
-    background: #2d3c4b url("../img/bg-back-tablet@1x.jpg");
+    background: $bg-blue url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 0;
     background-repeat: no-repeat;
 
@@ -178,7 +178,7 @@
     top: 0;
     left: 0;
     margin-top: -110px;
-    background: #2d3c4b url("../img/bg-back-desktop@1x.jpg");
+    background: $bg-blue url("../img/bg-back-desktop@1x.jpg");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,7 +216,6 @@
     height: 545px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
-    // left: -20px;
     top: 185px;
     background-position-x: calc((100vw - 700px) / 2);
 
