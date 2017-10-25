@@ -49,6 +49,8 @@
   display: inline-block;
   vertical-align: top;
   word-break: break-all;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -60,4 +62,6 @@
   display: inline-block;
   vertical-align: top;
   word-break: break-all;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
