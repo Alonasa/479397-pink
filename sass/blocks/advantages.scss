@@ -133,16 +133,18 @@
   position: relative;
 }
 
-@media (min-width: $desktop-width) {
-  content: "";
-  position: absolute;
-  bottom: 260px;
-  left: -25px;
-  width: 292px;
-  height: 302px;
-  background-image: url("../img/iphone-screen-1-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-size: 292px 302px;
+.advantages__mood::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    bottom: 260px;
+    left: -25px;
+    width: 292px;
+    height: 302px;
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 292px 302px;
+  }
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {

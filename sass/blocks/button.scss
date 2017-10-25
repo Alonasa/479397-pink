@@ -15,6 +15,12 @@
   background-color: $green-btn;
 
   &--1 {
-    width: 460px;
+    @media (min-width: $tablet-width) {
+      width: 300px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 460px;
+    }
   }
 }
