@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.min.css" type="text/css">
   </head>
   <body>
+    <div style="display:none">
+      <include src="img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header__inner">
       <h1 class="visually-hidden">Официальный сайт приложения Пинк</h1>
       <nav class="main-nav">
@@ -18,24 +21,24 @@
                 <a class="site-list__logo" href="index.html">
                   <svg class="site-list__logo-image site-list__logo-image--desktop" width="146.3" height="40.375">
                     <title>Главный логотип компании Пинк</title>
-                    <use xlink:href="img/logo-sprite.svg#logo-pink-white-desktop"></use>
+                    <use xlink:href="#logo-pink-white-desktop"></use>
                   </svg>
                   <svg class="site-list__logo-image site-list__logo-image--tablet" width="146.3" height="40.375">
                     <title>Главный логотип компании Пинк</title>
-                    <use xlink:href="img/logo-sprite.svg#logo-pink-white-tablet"></use>
+                    <use xlink:href="#logo-pink-white-tablet"></use>
                   </svg>
                   <svg class="site-list__logo-image site-list__logo-image--mobile" width="74.426" height="22.859">
                     <title>Главный логотип компании Пинк</title>
-                    <use xlink:href="img/logo-sprite.svg#logo-pink-white-mobile"></use>
+                    <use xlink:href="#logo-pink-white-mobile"></use>
                   </svg>
                 </a>
                 <button class="site-list__toggle" type="button">
                   <span class="visually-hidden">Открыть меню</span>
                   <svg class="site-list__toggle-menu site-list__toggle--open" width="23.867" height="23.867">
-                    <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+                    <use xlink:href="#icon-menu-cross"></use>
                   </svg>
                   <svg class="site-list__toggle-menu" width="49.945" height="24.007">
-                    <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+                    <use xlink:href="#icon-menu-burger"></use>
                   </svg>
                 </button>
               </li>
@@ -87,10 +90,10 @@
                     </div>
                   </div>
                   <div class="competition__form-item">
-                    <p class="competition__input-info">
+                    <div class="competition__input-info">
                       <label class="competition__label competition__contact-data" for="competition__first-name">Имя:</label>
                       <input class="competition__input competition__input2" type="text" name="first-name" id="competition__first-name" placeholder="Введите ваше имя *">
-                    </p>
+                    </div>
                   </div>
                   <div class="competition__form-item">
                     <div class="competition__input-info">
@@ -205,11 +208,11 @@
         <a class="footer-form__logo" href="index.html">
           <svg class="footer-form__logo-image footer__logo-block footer__logo-block--desktop" width="146.3" height="40.375">
             <title>Логотип компании Пинк</title>
-            <use xlink:href="img/logo-sprite.svg#logo-pink-blue-desktop"></use>
+            <use xlink:href="#logo-pink-blue-desktop"></use>
           </svg>
           <svg class="footer-form__logo-image footer__logo-block footer__logo-block--mobile" width="146.3" height="40.375">
             <title>Логотип компании Пинк</title>
-            <use xlink:href="img/logo-sprite.svg#logo-pink-blue-mobile"></use>
+            <use xlink:href="#logo-pink-blue-mobile"></use>
           </svg>
         </a>
         <div class="footer-form__social social">

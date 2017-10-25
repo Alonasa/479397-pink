@@ -62,7 +62,7 @@
 .competition__title {
   @include zero;
   @include font-small;
-  padding: 31px 20px 4px;
+  padding: 31px 20px 20px;
   text-align: center;
   background-color: $white;
 
@@ -126,7 +126,7 @@
   @include zero;
   border: $list;
   margin: 0 auto;
-  padding-bottom: 66px;
+  padding-bottom: 50px;
   width: 280px;
   display: flex;
   flex-direction: column;
@@ -136,7 +136,7 @@
   @media (min-width: $tablet-width) {
     @include zero;
     width: 620px;
-    margin-bottom: 63px;
+    margin-bottom: 61px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -193,6 +193,17 @@
 
   @media (min-width: $desktop-width) {
     width: 268px;
+  }
+}
+
+.competition__input-field input[type="tel"],
+.competition__input-field input[type="email"] {
+  @media (min-width: $tablet-width) {
+    width: 454px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 329px;
   }
 }
 
@@ -291,7 +302,7 @@
 
   @media (min-width: $tablet-width) {
     @include zero;
-    margin-bottom: 57px;
+    margin-bottom: 55px;
     background-color: inherit;
     border: 2px solid #e5e5e5;
   }
@@ -394,15 +405,16 @@
   @media (min-width: $tablet-width) {
     @include zero;
     margin: 0 auto;
-    margin-top: 43px;
+    margin-top: 52px;
     margin-bottom: 48px;
     width: 500px;
     align-items: flex-start;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     width: 820px;
-    margin-top: 43px;
+    margin-top: 51px;
     margin-bottom: 13px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -481,16 +493,17 @@
 }
 
 .competition__wrap-1 {
-  margin-bottom: 27px;
+  margin: 18px 0 25px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 16px;
+    margin-top: 24px;
     margin-bottom: 11px;
   }
 
   @media (min-width: $desktop-width) {
     width: 820px;
     margin: 0 auto;
+    margin-top: 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -516,7 +529,7 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 54px;
     width: 620px;
     order: 2;
   }
@@ -531,6 +544,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -571,64 +585,23 @@
   }
 }
 
-.competition__input-extra {
-  position: relative;
-}
-
-.competition__input-extra::before {
+.competition__input--phone {
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 63px;
-    background-color: #e5e5e5;
-    left: 440px;
-    top: -73px;
+    background: url("../img/icon-phone.svg") 95.5% no-repeat, linear-gradient(to right, $white 0, $white 87.9%, $main-pink 87.9%, $main-pink 100%);
   }
 
   @media (min-width: $desktop-width) {
-    width: 62px;
-    left: 313px;
-    top: -63px;
+    background: url("../img/icon-phone.svg") 93.9% no-repeat, linear-gradient(to right, $white 0, $white 83.4%, $main-pink 83.4%, $main-pink 100%);
   }
 }
 
-.competition__label--phone::after {
+.competition__input--email {
   @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 63px;
-    background-color: $clear;
-    left: 458px;
-    top: -52px;
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
+    background: url("../img/icon-mail.svg") 95.5% no-repeat, linear-gradient(to right, $white 0, $white 87.9%, $main-pink 87.9%, $main-pink 100%);
   }
 
   @media (min-width: $desktop-width) {
-    width: 62px;
-    left: 333px;
-    top: -42px;
-  }
-}
-
-.competition__label--email::after {
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 63px;
-    background-color: $clear;
-    left: 459px;
-    top: -49px;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 334px;
-    top: -38px;
+    background: url("../img/icon-mail.svg") 93.9% no-repeat, linear-gradient(to right, $white 0, $white 83.4%, $main-pink 83.4%, $main-pink 100%);
   }
 }
 
@@ -659,14 +632,14 @@
   margin: 34px 0 7px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 43px;
-    margin-bottom: 19px;
+    margin-top: 51px;
+    margin-bottom: 17px;
     width: 616px;
   }
 
   @media (min-width: $desktop-width) {
     width: 431px;
-    margin: 47px 0 23px;
+    margin: 54px 0 21px;
     align-items: center;
   }
 }
@@ -685,7 +658,7 @@
   @media (min-width: $desktop-width) {
     width: 234px;
     margin: 0 auto;
-    margin-bottom: 33px;
+    margin-bottom: 34px;
     padding-left: 69px;
   }
 }
@@ -734,13 +707,13 @@
   @media (min-width: $tablet-width) {
     height: 161px;
     width: 468px;
-    margin: 37px 58px 45px;
+    margin: 45px 58px;
   }
 
   @media (min-width: $desktop-width) {
     width: 788px;
     height: 96px;
-    margin: 34px 58px 37px;
+    margin: 42px 58px 37px;
   }
 }
 
@@ -886,4 +859,32 @@
 
 .competition__star-marker {
   color: $pink;
+}
+
+.competition__goals,
+.competition__personal-contacts,
+.competition__app,
+.competition__emotions-input {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-top: 8px;
+  }
+}
+
+.competition__personal-goals,
+.competition__contact-legend,
+.competition__app-legend,
+.competition__emotions-legend {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    background-color: $white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -9px;
+  }
 }

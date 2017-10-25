@@ -229,19 +229,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: $clear;
   }
 
-  // .site-list__logo-block {
-  //   width: 150px;
-  // }
-
   .site-list__nav-block {
-    min-width: 620px;
+    width: 620px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .site-list__item {
