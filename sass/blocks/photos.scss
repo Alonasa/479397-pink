@@ -141,6 +141,7 @@
 .photos__item {
   @include zero;
   @include font-xsmall;
+  font-weight: $fw-med;
   padding: 18px 20px 0 17px;
 
   @media (min-width: $tablet-width) {

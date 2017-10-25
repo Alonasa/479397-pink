@@ -343,18 +343,6 @@
   }
 }
 
-.competition__app-legend {
-  width: 180px;
-
-  @media (min-width: $tablet-width) {
-    width: 336px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 336px;
-  }
-}
-
 .competition__emotions-legend {
   @media (min-width: $tablet-width) {
     padding: 0 38px;
@@ -418,6 +406,7 @@
     margin-bottom: 13px;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -454,7 +443,6 @@
 .competition__list-option:nth-child(4) {
   @media (min-width: $desktop-width) {
     order: 4;
-    margin-left: 29px;
   }
 }
 
@@ -489,6 +477,24 @@
   @media (min-width: $desktop-width) {
     padding-top: 13px;
     min-width: 936px;
+  }
+}
+
+.competition__row-1 {
+  @media (min-width: $desktop-width) {
+    width: 220px;
+  }
+}
+
+.competition__row-2 {
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
+}
+
+.competition__row-3 {
+  @media (min-width: $desktop-width) {
+    width: 150px;
   }
 }
 
@@ -615,12 +621,14 @@
   @media (min-width: $tablet-width) {
     @include zero;
     margin: 0 auto;
+    margin-top: 10px;
     width: 616px;
     border: 2px solid $fair-grey;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-top: 8px;
     width: 431px;
   }
 }
@@ -632,7 +640,7 @@
   margin: 34px 0 7px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 51px;
+    margin-top: 42px;
     margin-bottom: 17px;
     width: 616px;
   }
@@ -640,7 +648,6 @@
   @media (min-width: $desktop-width) {
     width: 431px;
     margin: 54px 0 21px;
-    align-items: center;
   }
 }
 
@@ -864,7 +871,6 @@
 
 .competition__goals,
 .competition__personal-contacts,
-.competition__app,
 .competition__emotions-input {
   @media (min-width: $tablet-width) {
     position: relative;
@@ -879,7 +885,6 @@
 
 .competition__personal-goals,
 .competition__contact-legend,
-.competition__app-legend,
 .competition__emotions-legend {
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -887,5 +892,25 @@
     left: 50%;
     transform: translateX(-50%);
     top: -9px;
+  }
+}
+
+.competition__app-legend {
+  width: 180px;
+  text-align: center;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 336px;
+    margin-top: -9px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: inline;
+    background-color: $white;
+    margin-left: 33px;
+    margin-top: -9px;
   }
 }
