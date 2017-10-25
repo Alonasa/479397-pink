@@ -31,15 +31,13 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-// // posthtml
-//
-// gulp.task("html", function () {
-//   return gulp.src("*.html")
-//     .pipe(posthtml([
-//       include()
-//     ]))
-//     .pipe(gulp.dest("build"));
-// });
+gulp.task("html", function () {
+  return gulp.src("*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
+});
 
 gulp.task("imagemin", function () {
   return gulp.src("img/**/*.{png,jpg,svg}")
@@ -100,7 +98,7 @@ gulp.task("build", function(done) {
     "imagemin",
     "webp",
     "sprite",
-    // "html",
+    "html",
     done
   );
 });
